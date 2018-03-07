@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Built-By: natini
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_161
+Extension-Name: elst228
+Specification-Title: TODO
+Implementation-Title: elst228
+Implementation-Version: 1.0-SNAPSHOT
+Group-Id: io.jenkins.plugins
+Short-Name: elst228
+Long-Name: TODO Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-c894f723-natini)
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: structs:1.7
+Plugin-Developers: 
+
