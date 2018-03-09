@@ -1,0 +1,7 @@
+Project 13 Group 11
+
+We have tentatively agreed upon having our weekly meetings on Tuesdays at 3:30 - 5:00, with the end time adjusted as needed.
+
+For an idea of the schedule that we have tentatively agreed to, please see 'UserStories.html'
+
+For Iteration 1, there is not much to report on.  As of this writing, we have only downloaded the hello world jenkins plugin.  No changes to the file have been made as of yet.

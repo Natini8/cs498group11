@@ -1,0 +1,75 @@
+User Stories
+
+User Stories: 1 Unit = 1 Hour
+
+Iteration 1: 7 Hours/Week
+
+	Test Error Location
+	Priority: 1
+	Unit (Story Points): 5
+	Description: I want to be able to easily detect an error by being told what line the error occurred.
+
+        Title: Console Output
+        Priority: 1
+        Unit (Story Points): 2
+        Description: I want to be able to see the output from the plugin to the console.
+
+        Title: Output tests Skipped
+        Priority: 1
+        Unit (Story Points): 2
+        Description: I want to know how many tests were skipped.
+
+        Title: Error Line
+        Priority: 2
+        Unit (Story Points): 3
+        Description: I want to be able to esily detect an error by being told what line the error occurred.
+	
+Iteration 2: 7 Hours/week
+
+	Title: Error Type
+	Priority: 2
+	Unit (Story Points): 2
+	Description: I want to be able to understand the type of error that occurred (ex. sugementation fault).
+
+	Title: Test or Code Error	
+	Priority: 2
+	Unit (Story Points): 8
+	Description: I want to know if the error came from the test cases or the source code.
+
+	Title: Readable/Shortened Output
+	Priority: 2
+	Unit (Story Points): 1
+	Description: I want to be able to see a shortened version of the console output in order to isolate important information.
+
+	Title: Testing Time
+	Priority: 2
+	Unit (Story Points): 2
+	Description: I want to know how long the testing took, not including the build time.
+
+Iteration 3: 7 Hours/week
+
+	Title: Suggested Fix
+	Priority: 3
+	Unit (Story Points): 3
+	Description: I want the program to suggest ways to fix errors if they occur.
+
+	Title: Detect Hardware Problems
+	Priority: 3
+	Unit (Story Points): 13
+	Description: I want the plugin to be able to detect hardware issues if they occur (ex. something not plugged in).
+
+	Title: Suggest Future Fixes*
+	Priority: 3
+	Unit (Story Points): 13
+	Description: I want the plugin to be able to suggest fixes based on the source code provided.
+
+	Title: Optimize Suggestions
+	Priority: 3
+	Unit (Story Points): 5
+	Description: I want the plugin to suggest changes in an effort to help me optimze the source code.
+
+*Suggested Future Fixes Breakdown
+
+	Place relevant information into a seperate file
+	Output common bad programming practices into the file
+	Find similarities in coding practices in the files
