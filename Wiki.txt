@@ -1,0 +1,50 @@
+Project 13 Group 11
+
+Minutes:
+
+	March 9, 3:30 - 5:00: We installed the helo world plugin into our repository and created the user stories
+
+	March 25, 7:00 - 8:00: We re-installed the hello world plugin due to an error with the default tests
+
+	March 27, 5:00 - 
+
+Iteration 1:
+
+	There is not much to report on.  As of this writing, we have only downloaded the hello world jenkins plugin.  No changes to the file have been made as of yet.
+
+User Stories: 1 Unit = 2 Hours
+
+		Test Error Location
+		Priority: 1
+		Unit (Story Points): 5
+		Description: I want to be able to easily detect an error by being told what line the error occurred
+
+        	Title: Console Output
+        	Priority: 1
+        	Unit (Story Points): 2
+        	Description: I want to be able to see the output from the plugin to the console.
+
+        	Title: Output tests Skipped
+        	Priority: 1
+        	Unit (Story Points): 2
+        	Description: I want to know how many tests were skipped.
+
+		Title: Error Type
+		Priority: 2
+		Unit (Story Points): 2
+		Description: I want to be able to understand the type of error that occurred (ex. sugementation fault).
+
+		Title: Test or Code Error	
+		Priority: 2
+		Unit (Story Points): 8
+		Description: I want to know if the error came from the test cases or the source code.
+
+		Title: Readable/Shortened Output
+		Priority: 2
+		Unit (Story Points): 1
+		Description: I want to be able to see a shortened version of the console output in order to isolate important information.
+
+		Title: Testing Time
+		Priority: 2
+		Unit (Story Points): 2
+		Description: I want to know how long the testing took, not including the build time.
