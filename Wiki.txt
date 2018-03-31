@@ -2,49 +2,75 @@ Project 13 Group 11
 
 Minutes:
 
-	March 9, 3:30 - 5:00: We installed the helo world plugin into our repository and created the user stories
+    	March 9, 3:30 - 5:00: We installed the helo world plugin into our repository and created the user stories
 
-	March 25, 7:00 - 8:00: We re-installed the hello world plugin due to an error with the default tests
+    	March 25, 7:00 - 8:00: We re-installed the hello world plugin due to an error with the default tests
 
-	March 27, 5:00 - 7:00: Unfortunately, we are still having difficulty actually installing the hello world plugin in such a way that it can run properly. 
+    	March 27, 5:00 - 7:00: Unfortunately, we are still having difficulty actually installing the hello world plugin in such a way that it can run properly.
 
 Iteration 1:
 
-	There is not much to report on.  As of this writing, we have only downloaded the hello world jenkins plugin.  No changes to the file have been made as of yet.
+    	There is not much to report on.  As of this writing, we have only downloaded the hello world jenkins plugin.  No changes to the file have been made as of yet.
+
+Iteration 2:
+
+	There has not been as much progress as we would like.  As of now, the only progress made is that the plugin has been successfully installed.
 
 User Stories: 1 Unit = 2 Hours
 
-		Test Error Location
-		Priority: 1
-		Unit (Story Points): 5
-		Description: I want to be able to easily detect an error by being told what line the error occurred
+            	Test Error Location
+            	Priority: 1
+            	Unit (Story Points): 5
+            	Description: I want to be able to easily detect an error by being told what line the error occurred
+		Task 1: Find position where error occured
+		Task 2: Store error line
+		Task 3: Output error line
 
-        	Title: Console Output
-        	Priority: 1
-        	Unit (Story Points): 2
-        	Description: I want to be able to see the output from the plugin to the console.
+            	Title: Console Output
+            	Priority: 1
+            	Unit (Story Points): 2
+            	Description: I want to be able to see the output from the plugin to the console.
+		Task 1: Read input
+		Task 2: Parse Input
+		Task 3: Output parsed input
 
-        	Title: Output tests Skipped
-        	Priority: 1
-        	Unit (Story Points): 2
-        	Description: I want to know how many tests were skipped.
+		Title: Output tests Skipped
+            	Priority: 2
+            	Unit (Story Points): 2
+            	Description: I want to know which tests were skipped.
+		Task 1: Read skipped tests
+		Task 2: Store the tests that have been skipped
+		Task 3: Output each skipped test
 
-		Title: Error Type
-		Priority: 2
-		Unit (Story Points): 2
-		Description: I want to be able to understand the type of error that occurred (ex. sugementation fault).
+            	Title: Error Type
+            	Priority: 2
+            	Unit (Story Points): 2
+            	Description: I want to be able to understand the type of error that occurred (ex. segmentation fault).
+		Task 1: Analyze error output to determine type of error
+		Task 2: Record type of error
+		Task 3: Output type of error
 
-		Title: Test or Code Error	
-		Priority: 2
-		Unit (Story Points): 8
-		Description: I want to know if the error came from the test cases or the source code.
+            	Title: Test or Code Error
+            	Priority: 3
+            	Unit (Story Points): 8
+            	Description: I want to know if the error came from the test cases or the source code.
+		Task 1: Read errors
+		Task 2: Parse the location of the errors
+		Task 3: Output based on files that have sent an error
 
-		Title: Readable/Shortened Output
-		Priority: 2
-		Unit (Story Points): 1
-		Description: I want to be able to see a shortened version of the console output in order to isolate important information.
+            	Title: Readable/Shortened Output
+            	Priority: 3
+            	Unit (Story Points): 1
+            	Description: I want to be able to see a shortened version of the console output in order to isolate important information.
+		Task 1: Go through normal console output and store only needed information
+		Task 2: Organize information for better readability.
+		Task 3: Output new console output
 
-		Title: Testing Time
-		Priority: 2
-		Unit (Story Points): 2
-		Description: I want to know how long the testing took, not including the build time.
+            	Title: Testing Time
+            	Priority: 3
+            	Unit (Story Points): 2
+            	Description: I want to know how long the testing took, not including the build time.
+		Task 1: Read testing time
+		Task 2: Read build time
+		Task 3: Subtract build time from testing time
+
