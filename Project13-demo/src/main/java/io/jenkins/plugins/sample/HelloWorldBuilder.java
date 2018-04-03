@@ -18,7 +18,7 @@ import jenkins.tasks.SimpleBuildStep;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
-public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
+public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Test comment
 
     private final String name;
     private boolean useFrench;
