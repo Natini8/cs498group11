@@ -43,11 +43,17 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Tes
 
     @Override
     public void perform(Run<?, ?> run, FilePath workspace, Launcher launcher, TaskListener listener) throws InterruptedException, IOException {
+        long startTime = System.currentTimeMillis();
+        long stopTime;
+        double elapsedTimeInSeconds;
         if (useFrench) {
             listener.getLogger().println("Bonjour, " + name + "!");
         } else {
             listener.getLogger().println("Hello, " + name + "!");
         }
+        stopTime = System.currentTimeMillis();
+        elapsedTimeInSeconds = (stopTime - startTime) / 1000.0;
+        listener.getLogger().println("This plugin completed in" + elapsedTimeInSeconds + "seconds");
     }
 
     @Symbol("greet")
