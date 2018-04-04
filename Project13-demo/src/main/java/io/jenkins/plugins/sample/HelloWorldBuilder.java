@@ -52,8 +52,8 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Tes
             listener.getLogger().println("Hello, " + name + "!");
         }
         stopTime = System.currentTimeMillis();
-        elapsedTimeInSeconds = (stopTime - startTime) / 1000.0;
-        listener.getLogger().println("This plugin completed in" + elapsedTimeInSeconds + "seconds");
+        elapsedTimeInSeconds = (stopTime - startTime) / 1000.000;
+        listener.getLogger().println("This plugin completed in " + elapsedTimeInSeconds + " seconds");
     }
 
     @Symbol("greet")
