@@ -8,7 +8,9 @@ Minutes:
 
     	March 27, 5:00 - 7:00: Unfortunately, we are still having difficulty actually installing the hello world plugin in such a way that it can run properly.
 
-	April 3, 5:00 - 
+	April 3, 5:00 - 6:00: Finished outputting on the console.
+	
+	April 4, 12:00 - 1:00: Completed the story board for testing time.
 
 Iteration 1:
 
