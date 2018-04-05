@@ -21,7 +21,7 @@ import org.kohsuke.stapler.DataBoundSetter;
 public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Test comment
 
     private final String name;
-    private boolean useFrench;
+    private boolean useShortened;
 
     @DataBoundConstructor
     public HelloWorldBuilder(String name) {
@@ -32,13 +32,13 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Tes
         return name;
     }
 
-    public boolean isUseFrench() {
-        return useFrench;
+    public boolean isUseShortened() {
+        return useShortened;
     }
 
     @DataBoundSetter
-    public void setUseFrench(boolean useFrench) {
-        this.useFrench = useFrench;
+    public void setUseShortened(boolean useShortened) {
+        this.useShortened = useShortened;
     }
 
     @Override
@@ -46,10 +46,10 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Tes
         long startTime = System.currentTimeMillis();
         long stopTime;
         double elapsedTimeInSeconds;
-        if (useFrench) {
-            listener.getLogger().println("Bonjour, " + name + "!");
+        if (useShortened) {
+            listener.getLogger().println("Using shortened output, " + name + "!");
         } else {
-            listener.getLogger().println("Hello, " + name + "!");
+            listener.getLogger().println("Using original output, " + name + "!");
         }
         stopTime = System.currentTimeMillis();
         elapsedTimeInSeconds = (stopTime - startTime) / 1000.000;
@@ -60,14 +60,14 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Tes
     @Extension
     public static final class DescriptorImpl extends BuildStepDescriptor<Builder> {
 
-        public FormValidation doCheckName(@QueryParameter String value, @QueryParameter boolean useFrench)
+        public FormValidation doCheckName(@QueryParameter String value, @QueryParameter boolean useShortened)
                 throws IOException, ServletException {
             if (value.length() == 0)
                 return FormValidation.error(Messages.HelloWorldBuilder_DescriptorImpl_errors_missingName());
             if (value.length() < 4)
                 return FormValidation.warning(Messages.HelloWorldBuilder_DescriptorImpl_warnings_tooShort());
-            if (!useFrench && value.matches(".*[éáàç].*")) {
-                return FormValidation.warning(Messages.HelloWorldBuilder_DescriptorImpl_warnings_reallyFrench());
+            if (!useShortened && value.matches(".*[éáàç].*")) {
+                return FormValidation.warning(Messages.HelloWorldBuilder_DescriptorImpl_warnings_reallyShortened());
             }
             return FormValidation.ok();
         }
