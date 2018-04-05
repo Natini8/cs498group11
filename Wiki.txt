@@ -11,6 +11,8 @@ Minutes:
 	April 3, 5:00 - 6:00: Finished outputting on the console.
 	
 	April 4, 12:00 - 1:00: Completed the story board for testing time.
+	
+	April 5, 6:20 - 7:15: Started to add shortened output functionality.
 
 Iteration 1:
 
