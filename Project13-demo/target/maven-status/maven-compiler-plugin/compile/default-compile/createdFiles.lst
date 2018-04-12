@@ -5,4 +5,5 @@ META-INF/annotations/org.kohsuke.accmod.Restricted
 io/jenkins/plugins/sample/Messages.class
 io/jenkins/plugins/sample/HelloWorldBuilder/DescriptorImpl/doCheckName.stapler
 META-INF/annotations/org.jenkinsci.Symbol
+io/jenkins/plugins/sample/HelloWorldAction.class
 META-INF/annotations/hudson.Extension

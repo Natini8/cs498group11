@@ -18,10 +18,10 @@ import jenkins.tasks.SimpleBuildStep;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
-public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Test comment
+public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
     private final String name;
-    private boolean useShortened;
+    private boolean useFrench;
 
     @DataBoundConstructor
     public HelloWorldBuilder(String name) {
@@ -32,13 +32,13 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Tes
         return name;
     }
 
-    public boolean isUseShortened() {
-        return useShortened;
+    public boolean isUseFrench() {
+        return useFrench;
     }
 
     @DataBoundSetter
-    public void setUseShortened(boolean useShortened) {
-        this.useShortened = useShortened;
+    public void setUseFrench(boolean useFrench) {
+        this.useFrench = useFrench;
     }
 
     @Override
@@ -46,13 +46,17 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Tes
         long startTime = System.currentTimeMillis();
         long stopTime;
         double elapsedTimeInSeconds;
-        if (useShortened) {
-            listener.getLogger().println("Using shortened output, " + name + "!");
+
+        run.addAction(new HelloWorldAction(name));
+
+        if (useFrench) {
+            listener.getLogger().println("Bonjour, " + name + "!");
         } else {
-            listener.getLogger().println("Using original output, " + name + "!");
+            listener.getLogger().println("Hello, " + name + "!");
         }
+
         stopTime = System.currentTimeMillis();
-        elapsedTimeInSeconds = (stopTime - startTime) / 1000.000;
+        elapsedTimeInSeconds = (stopTime -startTime) / 1000.0;
         listener.getLogger().println("This plugin completed in " + elapsedTimeInSeconds + " seconds");
     }
 
@@ -60,14 +64,14 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {//Tes
     @Extension
     public static final class DescriptorImpl extends BuildStepDescriptor<Builder> {
 
-        public FormValidation doCheckName(@QueryParameter String value, @QueryParameter boolean useShortened)
+        public FormValidation doCheckName(@QueryParameter String value, @QueryParameter boolean useFrench)
                 throws IOException, ServletException {
             if (value.length() == 0)
                 return FormValidation.error(Messages.HelloWorldBuilder_DescriptorImpl_errors_missingName());
             if (value.length() < 4)
                 return FormValidation.warning(Messages.HelloWorldBuilder_DescriptorImpl_warnings_tooShort());
-            if (!useShortened && value.matches(".*[éáàç].*")) {
-                return FormValidation.warning(Messages.HelloWorldBuilder_DescriptorImpl_warnings_reallyShortened());
+            if (!useFrench && value.matches(".*[éáàç].*")) {
+                return FormValidation.warning(Messages.HelloWorldBuilder_DescriptorImpl_warnings_reallyFrench());
             }
             return FormValidation.ok();
         }
