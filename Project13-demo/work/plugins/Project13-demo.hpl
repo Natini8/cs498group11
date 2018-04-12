@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Group-Id: io.jenkins.plugins
 Short-Name: Project13-demo
 Long-Name: TODO Plugin
-Plugin-Version: 1.0-SNAPSHOT (private-6c5cd13d-tlco255)
+Plugin-Version: 1.0-SNAPSHOT (private-0adc9382-tlco255)
 Hudson-Version: 2.7.3
 Jenkins-Version: 2.7.3
 Plugin-Dependencies: structs:1.7
