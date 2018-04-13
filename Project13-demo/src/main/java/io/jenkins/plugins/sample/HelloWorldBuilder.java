@@ -1,6 +1,7 @@
 package io.jenkins.plugins.sample;
 
 import hudson.Launcher;
+
 import hudson.Extension;
 import hudson.FilePath;
 import hudson.util.FormValidation;
@@ -11,7 +12,13 @@ import hudson.tasks.Builder;
 import hudson.tasks.BuildStepDescriptor;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
+import hudson.tasks.Recorder;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.io.Reader;
+import java.io.BufferedReader;
+import javax.print.DocFlavor.READER;
 import javax.servlet.ServletException;
 import java.io.IOException;
 import jenkins.tasks.SimpleBuildStep;
@@ -19,7 +26,8 @@ import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
 public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
-
+	
+	private transient static final Logger LOGGER = Logger.getLogger(Recorder.class.getName());
     private final String name;
     private boolean useFrench;
 
@@ -45,8 +53,22 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
     public void perform(Run<?, ?> run, FilePath workspace, Launcher launcher, TaskListener listener) throws InterruptedException, IOException {
         long startTime = System.currentTimeMillis();
         long stopTime;
+        String line;
         double elapsedTimeInSeconds;
+        Reader logReader = run.getLogReader();
+        BufferedReader reader = new BufferedReader(logReader);
+        StringBuilder buffer = new StringBuilder();
+        try {
+            while ((line = reader.readLine()) != null) {
+                buffer.append(line).append("\n");
+               
+            }
+        } catch (IOException ex) {
+            LOGGER.log(Level.SEVERE, ex.getMessage(), ex);
+        }
 
+        // First search in buffer
+        String bufferStr = buffer.toString();
         run.addAction(new HelloWorldAction(name));
 
         if (useFrench) {
@@ -58,6 +80,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         stopTime = System.currentTimeMillis();
         elapsedTimeInSeconds = (stopTime -startTime) / 1000.0;
         listener.getLogger().println("This plugin completed in " + elapsedTimeInSeconds + " seconds");
+        listener.getLogger().println(bufferStr);
     }
 
     @Symbol("greet")
