@@ -26,15 +26,15 @@ public class HelloWorldBuilderTest {
     }
 
     @Test
-    public void testConfigRoundtripFrench() throws Exception {
+    public void testConfigRoundtripShortened() throws Exception {
         FreeStyleProject project = jenkins.createFreeStyleProject();
         HelloWorldBuilder builder = new HelloWorldBuilder(name);
-        builder.setUseFrench(true);
+        builder.setUseShortened(true);
         project.getBuildersList().add(builder);
         project = jenkins.configRoundtrip(project);
 
         HelloWorldBuilder lhs = new HelloWorldBuilder(name);
-        lhs.setUseFrench(true);
+        lhs.setUseShortened(true);
         jenkins.assertEqualDataBoundBeans(lhs, project.getBuildersList().get(0));
     }
 
@@ -49,11 +49,11 @@ public class HelloWorldBuilderTest {
     }
 
     @Test
-    public void testBuildFrench() throws Exception {
+    public void testBuildShortened() throws Exception {
 
         FreeStyleProject project = jenkins.createFreeStyleProject();
         HelloWorldBuilder builder = new HelloWorldBuilder(name);
-        builder.setUseFrench(true);
+        builder.setUseShortened(true);
         project.getBuildersList().add(builder);
 
         FreeStyleBuild build = jenkins.buildAndAssertSuccess(project);
