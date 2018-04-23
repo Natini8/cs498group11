@@ -136,6 +136,8 @@ body .plugin-setup-wizard .modal-body .installing-panel {
 @media screen and (max-width: 992px) {
   body .plugin-setup-wizard .modal-body .installing-panel {
     padding: 5%;
+    height: 20%;
+    max-height: 20%;
   }
   body .plugin-setup-wizard .modal-body .installing-panel h1 {
     font-size: 24px;
@@ -396,24 +398,87 @@ body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin label +
   padding: .5em 1em;
   text-align: left;
 }
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .website-link {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin-left: 2px;
+}
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .website-link:before {
+  display: inline-block;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  content: '';
+  left: 2px;
+  top: 2px;
+  background: #555555;
+  border-radius: 4px;
+}
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .website-link:after {
+  content: '\f14c';
+  display: inline-block;
+  font: 15px FontAwesome;
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  color: #f8f8f8;
+}
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .website-link:hover:before,
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .website-link:focus:before {
+  background: #fff;
+}
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .website-link:hover:after,
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .website-link:focus:after {
+  color: #337ab7;
+  width: 16px;
+  height: 16px;
+  font-size: 17px;
+  left: 0px;
+  top: -1px;
+}
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list {
   position: absolute;
   top: 0;
   right: 0;
-  color: #777;
+  color: #555555;
   border: 0;
   text-decoration: none;
   padding: 5px 13px;
+  margin: 0 0;
   z-index: 100;
 }
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list .badge {
   margin-left: 7px;
+  padding-left: 9px;
+  background: #f8f8f8;
+  color: #555555;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list .badge:after {
+  content: '\f0d9';
+  font: 15px FontAwesome;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: -4px -2px 0px 1px;
+  vertical-align: middle;
 }
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list:hover,
-body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list:focus,
-body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list.active {
-  text-decoration: underline;
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list.active,
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list:focus {
+  text-decoration: none;
   outline: none;
+}
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list:hover .badge,
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list.active .badge,
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .toggle-dependency-list:focus .badge {
+  background: #555555;
+  color: #fff;
 }
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin.selected .toggle-dependency-list {
   top: -1px;
@@ -423,27 +488,34 @@ body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .dep-li
   padding: 10px 0 6px 0;
   display: none;
 }
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .dep-list > h3 {
+  margin: 0 25px 4px 0;
+  color: #555555;
+  font-size: 14px;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 5px;
+}
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .dep-list .badge {
   padding: 4px 8px;
   margin: 5px 3px 0 0;
+  background: #f8f8f8;
+  color: #555555;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .dep-list .badge:after {
+  content: '\f14c';
+  font: 11px FontAwesome;
 }
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .dep-list .badge:hover,
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .dep-list .badge:active,
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin .dep-list .badge:focus {
   color: #fff;
+  background: #337ab7;
+  text-decoration: none;
 }
-body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin.show-dependencies .toggle-dependency-list:after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 7px solid #999;
-  margin: -3px -3px 0 0;
+body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin.show-dependencies .toggle-dependency-list .badge:after {
+  content: '\f0d7';
 }
 body .plugin-setup-wizard .plugin-selector .plugins .plugin-list .plugin.show-dependencies .dep-list {
   display: block;
@@ -523,8 +595,10 @@ body .plugin-setup-wizard .install-console .install-console-scroll {
 @media screen and (max-width: 992px) {
   body .plugin-setup-wizard .install-console {
     width: 100%;
-    position: static;
-    max-height: 33%;
+    position: relative;
+    max-height: 40%;
+    height: 40%;
+    top: 0;
   }
 }
 body .plugin-setup-wizard .install-console .selected {
@@ -572,8 +646,10 @@ body .plugin-setup-wizard .selected-plugin-progress {
 @media screen and (max-width: 992px) {
   body .plugin-setup-wizard .selected-plugin-progress {
     width: 100%;
-    position: static;
-    max-height: 33%;
+    position: relative;
+    height: 40%;
+    max-height: 40%;
+    top: 0;
   }
 }
 body .plugin-setup-wizard .selected-plugin-progress.success-panel {
