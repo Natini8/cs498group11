@@ -4,8 +4,8 @@
         <f:textbox />
     </f:entry>
     <f:advanced>
-        <f:entry title="${%French}" field="useFrench"
-                 description="${%FrenchDescr}">
+        <f:entry title="${%Shortened}" field="useShortened"
+                 description="${%ShortenedDescr}">
             <f:checkbox />
         </f:entry>
     </f:advanced>
