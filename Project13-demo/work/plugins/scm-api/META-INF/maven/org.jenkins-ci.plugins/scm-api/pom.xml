@@ -29,12 +29,12 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.22</version>
+    <version>2.36</version>
     <relativePath />
   </parent>
 
   <artifactId>scm-api</artifactId>
-  <version>2.0.8</version>
+  <version>2.2.6</version>
   <packaging>hpi</packaging>
 
   <name>SCM API Plugin</name>
@@ -61,7 +61,7 @@
     <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
-    <tag>scm-api-2.0.8</tag>
+    <tag>scm-api-2.2.6</tag>
   </scm>
 
   <properties>
@@ -85,6 +85,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>structs</artifactId>
+      <version>1.9</version>
+    </dependency>
+    <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
       <version>1.9.5</version>
@@ -102,12 +107,6 @@
       <version>1.6</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>git</artifactId>
-      <version>2.5.3</version> <!-- 2.4.x does not work since it lacks https://github.com/jenkinsci/git-plugin/pull/402 -->
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 
   <build>
@@ -115,6 +114,13 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate-taglib-interface</goal>
+            </goals>
+          </execution>
+        </executions>
         <configuration>
           <compatibleSinceVersion>2.0.0</compatibleSinceVersion>
         </configuration>

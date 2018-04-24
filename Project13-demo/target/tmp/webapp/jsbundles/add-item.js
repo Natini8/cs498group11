@@ -1085,7 +1085,7 @@ var $ = require('jenkins-js-modules').require('core-assets/jquery-detached:jquer
 
 var getItems = function() {
   var d = $.Deferred();
-  $.get('itemCategories?depth=3').done(
+  $.get('itemCategories?depth=3&iconStyle=icon-xlg').done(
     function(data){
       d.resolve(data);
     }
@@ -1189,7 +1189,6 @@ $.when(getItems()).done(function(data) {
           btn.removeClass('disabled');
           btn.prop('disabled', false);
         }
-        btn.focus();
       } else {
         if (!btn.hasClass('disabled')) {
           btn.addClass('disabled');
@@ -1258,7 +1257,6 @@ $.when(getItems()).done(function(data) {
 
         setFieldValidationStatus('items', true);
         if (!getFieldValidationStatus('name')) {
-          activateValidationMessage('#itemname-required', '.add-item-name');
           $('input[name="name"][type="text"]', '#createItem').focus();
         } else {
           if (getFormValidationStatus()) {
@@ -1284,7 +1282,10 @@ $.when(getItems()).done(function(data) {
 
     function drawIcon(elem) {
       var $icn;
-      if (elem.iconFilePathPattern) {
+      if (elem.iconClassName && elem.iconQualifiedUrl) {
+        $icn = $('<div class="icon">');
+        $(['<img class="', elem.iconClassName, ' icon-xlg" src="', elem.iconQualifiedUrl, '">'].join('')).appendTo($icn);
+      } else if (elem.iconFilePathPattern) {
         $icn = $('<div class="icon">');
         var iconFilePath = jRoot + '/' + elem.iconFilePathPattern.replace(":size", "48x48");
         $(['<img src="', iconFilePath, '">'].join('')).appendTo($icn);
@@ -1316,7 +1317,7 @@ $.when(getItems()).done(function(data) {
     $("#add-item-panel").find("#name").focus();
 
     // Init NameField
-    $('input[name="name"]', '#createItem').blur(function() {
+    $('input[name="name"]', '#createItem').on("blur input", function() {
       if (!isItemNameEmpty()) {
         var itemName = $('input[name="name"]', '#createItem').val();
         $.get("checkJobName", { value: itemName }).done(function(data) {

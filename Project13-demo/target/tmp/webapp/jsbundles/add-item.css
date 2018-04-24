@@ -415,6 +415,11 @@
   text-align: center;
   z-index: 10;
 }
+#add-item-panel form > .footer .btn-decorator input[type=checkbox] {
+  width: auto;
+  min-width: auto;
+  margin-right: 0px;
+}
 #add-item-panel form > .footer .btn-decorator button[type=submit] {
   padding: 5px 20px;
   background-color: #ccddee;

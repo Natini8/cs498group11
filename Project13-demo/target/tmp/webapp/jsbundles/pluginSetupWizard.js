@@ -2045,7 +2045,7 @@ exports.incompleteInstallStatus = function(handler, correlationId) {
  * Call this to complete the installation without installing anything
  */
 exports.completeInstall = function(handler) {
-	jenkins.get('/setupWizard/completeInstall', function() {
+	jenkins.post('/setupWizard/completeInstall', {}, function() {
 		handler.call({ isError: false });
 	}, {
 		timeout: pluginManagerErrorTimeoutMillis,
@@ -2058,8 +2058,8 @@ exports.completeInstall = function(handler) {
 /**
  * Indicates there is a restart required to complete plugin installations
  */
-exports.isRestartRequired = function(handler) {
-	jenkins.get('/updateCenter/api/json?tree=restartRequiredForCompletion', function(response) {
+exports.getRestartStatus = function(handler) {
+	jenkins.get('/setupWizard/restartStatus', function(response) {
 		handler.call({ isError: false }, response.data);
 	}, {
 		timeout: pluginManagerErrorTimeoutMillis,
@@ -2087,7 +2087,7 @@ exports.installPluginsDone = function(handler) {
  * Restart Jenkins
  */
 exports.restartJenkins = function(handler) {
-	jenkins.get('/updateCenter/safeRestart', function() {
+	jenkins.post('/updateCenter/safeRestart', {}, function() {
 		handler.call({ isError: false });
 	}, {
 		timeout: pluginManagerErrorTimeoutMillis,
@@ -2111,8 +2111,13 @@ exports.saveFirstUser = function($form, success, error) {
 	jenkins.staplerPost(
 			'/setupWizard/createAdminUser',
 		$form,
-		success, {
-			dataType: 'html',
+		function(response) {
+        		var crumbRequestField = response.data.crumbRequestField;
+			if (crumbRequestField) {
+				require('window-handle').getWindow().crumb.init(crumbRequestField, response.data.crumb);
+			}
+			success(response);
+		}, {
 			error: error
 		});
 };
@@ -2130,7 +2135,7 @@ exports.saveProxy = function($form, success, error) {
 		});
 };
 
-},{"../util/jenkins":33}],18:[function(require,module,exports){
+},{"../util/jenkins":33,"window-handle":15}],18:[function(require,module,exports){
 require('jenkins-js-modules').whoami('undefined:pluginSetupWizard');
 
 require('jenkins-js-modules')
@@ -2364,7 +2369,7 @@ var createPluginSetupWizard = function(appendTarget) {
 	};
 
 	var getJenkinsVersion = function() {
-		return getJenkinsVersionFull().replace(/(\d[.]\d).*/,'$1');
+		return getJenkinsVersionFull().replace(/(\d[.][\d.]+).*/,'$1');
 	};
 
 	// call this to set the panel in the app, this performs some additional things & adds common transitions
@@ -2582,7 +2587,13 @@ var createPluginSetupWizard = function(appendTarget) {
 	var setupFirstUser = function() {
 		setPanel(firstUserPanel, {}, enableButtonsAfterFrameLoad);
 	};
-	
+
+	var showSetupCompletePanel = function(messages) {
+		pluginManager.getRestartStatus(function(restartStatus) {
+			setPanel(setupCompletePanel, $.extend(restartStatus, messages));
+		});
+	};
+
 	// used to handle displays based on current Jenkins install state
 	var stateHandlers = {
 		DEFAULT: function() {
@@ -2591,8 +2602,8 @@ var createPluginSetupWizard = function(appendTarget) {
 			$('.install-recommended').focus();
 		},
 		CREATE_ADMIN_USER: function() { setupFirstUser(); },
-		RUNNING: function() { setPanel(setupCompletePanel); },
-		INITIAL_SETUP_COMPLETED: function() { setPanel(setupCompletePanel); },
+		RUNNING: function() { showSetupCompletePanel(); },
+		INITIAL_SETUP_COMPLETED: function() { showSetupCompletePanel(); },
 		INITIAL_PLUGINS_INSTALLING: function() { showInstallProgress(); }
 	};
 	var showStatePanel = function(state) {
@@ -2616,9 +2627,34 @@ var createPluginSetupWizard = function(appendTarget) {
 			setPanel(pluginSuccessPanel, { installingPlugins : installingPlugins, failedPlugins: true });
 			return;
 		}
-
+		
+		var attachScrollEvent = function() {
+			var $c = $('.install-console-scroll');
+			if (!$c.length) {
+				setTimeout(attachScrollEvent, 50);
+				return;
+			}
+			var events = $._data($c[0], "events");
+			if (!events || !events.scroll) {
+				$c.on('scroll', function() {
+				    if (!$c.data('wasAutoScrolled')) {
+				    	var top = $c[0].scrollHeight - $c.height();
+				        if ($c.scrollTop() === top) {
+				        	// resume auto-scroll
+				        	$c.data('userScrolled', false);
+				        } else {
+				        	// user scrolled up
+					    	$c.data('userScrolled', true);
+				        }
+				    } else {
+				    	$c.data('wasAutoScrolled', false);
+				    }
+				});
+			}
+		};
+		
 		initInstallingPluginList();
-		setPanel(progressPanel, { installingPlugins : installingPlugins });
+		setPanel(progressPanel, { installingPlugins : installingPlugins }, attachScrollEvent);
 
 		// call to the installStatus, update progress bar & plugin details; transition on complete
 		var updateStatus = function() {
@@ -2646,8 +2682,8 @@ var createPluginSetupWizard = function(appendTarget) {
 				$('.progress-bar').css({width: ((100.0 * complete)/total) + '%'});
 
 				// update details
-				var $c = $('.install-text');
-				$c.children().remove();
+				var $txt = $('.install-text');
+				$txt.children().remove();
 
 				for(i = 0; i < jobs.length; i++) {
 					j = jobs[i];
@@ -2693,7 +2729,7 @@ var createPluginSetupWizard = function(appendTarget) {
 						else {
 							$div.addClass('dependent');
 						}
-						$c.append($div);
+						$txt.append($div);
 
 						var $itemProgress = $('.selected-plugin[id="installing-' + jenkins.idIfy(j.name) + '"]');
 						if($itemProgress.length > 0 && !$itemProgress.is('.'+state)) {
@@ -2702,13 +2738,14 @@ var createPluginSetupWizard = function(appendTarget) {
 					}
 				}
 
-				$c = $('.install-console-scroll');
-				if($c.is(':visible')) {
+				var $c = $('.install-console-scroll');
+				if($c && $c.is(':visible') && !$c.data('userScrolled')) {
+					$c.data('wasAutoScrolled', true);
 					$c.scrollTop($c[0].scrollHeight);
 				}
 
 				// keep polling while install is running
-				if(complete < total || data.state === 'INITIAL_PLUGINS_INSTALLING') {
+				if(complete < total && data.state === 'INITIAL_PLUGINS_INSTALLING') {
 					setPanel(progressPanel, { installingPlugins : installingPlugins });
 					// wait a sec
 					setTimeout(updateStatus, 250);
@@ -3018,16 +3055,17 @@ var createPluginSetupWizard = function(appendTarget) {
 			// ignore JSON parsing issues, this may be HTML
 		}
 		// we get 200 OK
-		var $page = $(data);
+		var responseText = data.responseText;
+		var $page = $(responseText);
 		var $errors = $page.find('.error');
 		if($errors.length > 0) {
 			var $main = $page.find('#main-panel').detach();
 			if($main.length > 0) {
-				data = data.replace(/body([^>]*)[>](.|[\r\n])+[<][/]body/,'body$1>'+$main.html()+'</body');
+				responseText = responseText.replace(/body([^>]*)[>](.|[\r\n])+[<][/]body/,'body$1>'+$main.html()+'</body');
 			}
 			var doc = $('iframe[src]').contents()[0];
 			doc.open();
-			doc.write(data);
+			doc.write(responseText);
 			doc.close();
 		}
 		else {
@@ -3043,7 +3081,7 @@ var createPluginSetupWizard = function(appendTarget) {
 
 	var skipFirstUser = function() {
 		$('button').prop({disabled:true});
-		setPanel(setupCompletePanel, {message: translations.installWizard_firstUserSkippedMessage});
+		showSetupCompletePanel({message: translations.installWizard_firstUserSkippedMessage});
 	};
 	
 	// call to setup the proxy
@@ -3099,10 +3137,14 @@ var createPluginSetupWizard = function(appendTarget) {
 			console.log('Waiting for Jenkins to come back online...');
 			console.log('-------------------');
 			var pingUntilRestarted = function() {
-				pluginManager.isRestartRequired(function(isRequired) {
-					if(this.isError || isRequired) {
-						console.log('Waiting...');
-						setTimeout(pingUntilRestarted, 1000);
+				pluginManager.getRestartStatus(function(restartStatus) {
+					if(this.isError || restartStatus.restartRequired) {
+						if (this.isError || restartStatus.restartSupported) {
+							console.log('Waiting...');
+							setTimeout(pingUntilRestarted, 1000);
+						} else if(!restartStatus.restartSupported) {
+							throw new Error(translations.installWizard_error_restartNotSupported);
+						}
 					}
 					else {
 						jenkins.goTo('/');
@@ -3436,9 +3478,11 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
     + alias2(alias3(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.title : stack1), depth0))
     + "\n        <a href=\""
     + alias2(alias3(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.website : stack1), depth0))
-    + "\" target=\"_blank\">"
+    + "\" target=\"_blank\" class=\"website-link\" title=\""
+    + alias2(alias3(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.title : stack1), depth0))
+    + " "
     + alias2(alias3(((stack1 = (depths[2] != null ? depths[2].translations : depths[2])) != null ? stack1.installWizard_websiteLinkLabel : stack1), depth0))
-    + "</a>\n      </span>\n"
+    + "\"></a>\n      </span>\n"
     + ((stack1 = (helpers.hasDependencies || (depth0 && depth0.hasDependencies) || alias1).call(depth0,((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1),{"name":"hasDependencies","hash":{},"fn":this.program(9, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "      <span class=\"description\">\n        "
     + ((stack1 = alias3(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.excerpt : stack1), depth0)) != null ? stack1 : "")
@@ -3454,17 +3498,21 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
 },"9":function(depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=this.lambda, alias2=this.escapeExpression;
 
-  return "      <a href=\"#\" class=\"btn btn-link toggle-dependency-list\" type=\"button\" data-plugin-name=\""
+  return "        <a href=\"#\" class=\"btn btn-link toggle-dependency-list\" type=\"button\" data-plugin-name=\""
     + alias2(alias1(((stack1 = (depths[1] != null ? depths[1].plugin : depths[1])) != null ? stack1.name : stack1), depth0))
-    + "\">\n        "
+    + "\" title=\""
+    + alias2(alias1(((stack1 = (depths[1] != null ? depths[1].plugin : depths[1])) != null ? stack1.title : stack1), depth0))
+    + " "
     + alias2(alias1(((stack1 = (depths[3] != null ? depths[3].translations : depths[3])) != null ? stack1.installWizard_installIncomplete_dependenciesLabel : stack1), depth0))
-    + "<span class=\"badge\">"
+    + "\">\n          <span class=\"badge\">"
     + alias2((helpers.dependencyCount || (depth0 && depth0.dependencyCount) || helpers.helperMissing).call(depth0,((stack1 = (depths[1] != null ? depths[1].plugin : depths[1])) != null ? stack1.name : stack1),{"name":"dependencyCount","hash":{},"data":data}))
-    + "</span>\n      </a>\n";
+    + "</span>\n        </a>\n";
 },"11":function(depth0,helpers,partials,data,blockParams,depths) {
     var stack1;
 
-  return "        <div class=\"dep-list\">\n"
+  return "        <div class=\"dep-list\">\n          <h3 class=\"dep-title\">"
+    + this.escapeExpression(this.lambda(((stack1 = (depths[3] != null ? depths[3].translations : depths[3])) != null ? stack1.installWizard_installIncomplete_dependenciesLabel : stack1), depth0))
+    + "</h3>\n"
     + ((stack1 = (helpers.eachDependency || (depth0 && depth0.eachDependency) || helpers.helperMissing).call(depth0,((stack1 = (depths[1] != null ? depths[1].plugin : depths[1])) != null ? stack1.name : stack1),{"name":"eachDependency","hash":{},"fn":this.program(12, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "        </div>\n";
 },"12":function(depth0,helpers,partials,data) {
@@ -3584,16 +3632,36 @@ module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('jenkins-handlebars-rt/runtimes/handlebars3_rt');
 module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return "		<h1>"
+    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_bannerRestart : stack1), depth0))
+    + "</h1>\n";
+},"3":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return "		<h1>"
+    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_banner : stack1), depth0))
+    + "</h1>\n";
+},"5":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.restartSupported : depth0),{"name":"if","hash":{},"fn":this.program(6, data, 0),"inverse":this.program(8, data, 0),"data":data})) != null ? stack1 : "");
+},"6":function(depth0,helpers,partials,data) {
     var stack1, alias1=this.lambda, alias2=this.escapeExpression;
 
-  return "		<p>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_message : stack1), depth0))
-    + " "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_restartRequiredMessage : stack1), depth0))
-    + "</p>\n		<button type=\"button\" class=\"btn btn-primary install-done-restart\">\n			"
+  return "			<p>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_installComplete_restartRequiredMessage : stack1), depth0))
+    + "</p>\n			<button type=\"button\" class=\"btn btn-primary install-done-restart\">\n				"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_restartLabel : stack1), depth0))
-    + "\n		</button>\n";
-},"3":function(depth0,helpers,partials,data) {
+    + "\n			</button>\n";
+},"8":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return "			<p>"
+    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_installComplete_restartRequiredNotSupportedMessage : stack1), depth0))
+    + "</p>\n";
+},"10":function(depth0,helpers,partials,data) {
     var stack1, alias1=this.lambda, alias2=this.escapeExpression;
 
   return "		<p>"
@@ -3602,16 +3670,16 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_finishButtonLabel : stack1), depth0))
     + "\n		</button>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper, alias1=this.lambda, alias2=this.escapeExpression;
+    var stack1, helper;
 
   return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_title : stack1), depth0))
-    + "</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"jumbotron welcome-panel success-panel\">\n		<h1>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_banner : stack1), depth0))
-    + "</h1>\n		\n		"
+    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_title : stack1), depth0))
+    + "</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"jumbotron welcome-panel success-panel\">\n"
+    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.restartRequired : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + "		\n		"
     + ((stack1 = ((helper = (helper = helpers.message || (depth0 != null ? depth0.message : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"message","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "\n\n"
-    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.restartRequired : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.restartRequired : depth0),{"name":"if","hash":{},"fn":this.program(5, data, 0),"inverse":this.program(10, data, 0),"data":data})) != null ? stack1 : "")
     + "	</div>\n</div>\n";
 },"useData":true});
 
@@ -3936,7 +4004,14 @@ exports.testConnectivity = function(siteId, handler) {
 					handler(true);
 				}
 			}
-		});
+		}, { error: function(xhr, textStatus, errorThrown) {
+                 if (xhr.status === 403) {
+                     exports.goTo('/login');
+                 } else {
+                     handler.call({ isError: true, errorMessage: errorThrown });
+                 }
+               }
+             });
 	};
 	testConnectivity();
 };
