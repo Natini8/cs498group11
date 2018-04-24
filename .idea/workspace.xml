@@ -17,8 +17,8 @@
       <file leaf-file-name="HelloWorldBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
+            <state relative-caret-position="225">
+              <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,9 +28,7 @@
       </file>
       <file leaf-file-name="HelloWorldAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -69,6 +67,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -269,7 +268,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,12 +348,13 @@
       <workItem from="1522967240394" duration="369000" />
       <workItem from="1524511644301" duration="1224000" />
       <workItem from="1524537679023" duration="2023000" />
-      <workItem from="1524598615945" duration="5069000" />
+      <workItem from="1524598615945" duration="5135000" />
+      <workItem from="1524606222124" duration="310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9840000" />
+    <option name="totallyTimeSpent" value="10216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1280" height="774" extended-state="6" />
@@ -401,6 +400,19 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
           <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
           <folding>
@@ -437,23 +449,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/resources/index.jelly">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project13-demo/src/test/java/io/jenkins/plugins/sample/HelloWorldBuilderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-741" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
+        <state relative-caret-position="225">
+          <caret line="92" column="9" lean-forward="true" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

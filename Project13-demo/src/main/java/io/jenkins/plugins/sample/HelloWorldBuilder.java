@@ -78,17 +78,17 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
         for (String line = br.readLine(); line != null; line = br.readLine()){
 
-            //Tests Passed perhaps
+            //Tests Passed perhaps [Tanner]
 
-            //Tests Failed perhaps
+            //Tests Failed perhaps [Laura]
 
-            //Tests Skipped perhaps
+            //Tests Skipped perhaps [Harsh]
 
-            //Counts for each perhaps
+            //Counts for each perhaps [EVERYONE]
 
-            //Files created
+            //Files created [Tanner]
 
-            //Lines where errors occured (MAYBE)
+            //Lines where errors occured (MAYBE)  [Elijah]
 
         }
 
