@@ -17,6 +17,7 @@ import hudson.tasks.Recorder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.Reader;
+import java.io.FileReader;
 import java.io.BufferedReader;
 import javax.print.DocFlavor.READER;
 import javax.servlet.ServletException;
@@ -51,33 +52,45 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
     public String parseFileShortened(bufferStr){
 
-        //Tests Passed perhaps
+        BufferedReader br = new BufferedReader(new FileReader(bufferStr));
 
-        //Tests Failed perhaps
+        for (String line = br.readLine(); line != null; line = br.readLine()){
 
-        //Tests Skipped perhaps
+            //Tests Passed perhaps
 
-        //Counts for each perhaps
+            //Tests Failed perhaps
 
-        //Files created
+            //Tests Skipped perhaps
 
-        //Lines where errors occured (MAYBE)
+            //Counts for each perhaps
+
+            //Files created
+
+            //Lines where errors occured (MAYBE)
+
+        }
 
     }
 
     public String parseFile(bufferStr){
 
-        //Tests Passed perhaps
+        BufferedReader br = new BufferedReader(new FileReader(bufferStr));
 
-        //Tests Failed perhaps
+        for (String line = br.readLine(); line != null; line = br.readLine()){
 
-        //Tests Skipped perhaps
+            //Tests Passed perhaps
 
-        //Counts for each perhaps
+            //Tests Failed perhaps
 
-        //Files created
+            //Tests Skipped perhaps
 
-        //Lines where errors occured (MAYBE)
+            //Counts for each perhaps
+
+            //Files created
+
+            //Lines where errors occured (MAYBE)
+
+        }
 
     }
 

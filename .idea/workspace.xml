@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71a1daa-0d08-4fd1-8988-3a3c151fe613" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cs498group11.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cs498group11.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java" afterDir="false" />
     </list>
@@ -19,8 +17,11 @@
       <file leaf-file-name="HelloWorldBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+            <state relative-caret-position="375">
+              <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -349,12 +350,12 @@
       <workItem from="1522967240394" duration="369000" />
       <workItem from="1524511644301" duration="1224000" />
       <workItem from="1524537679023" duration="2023000" />
-      <workItem from="1524598615945" duration="3206000" />
+      <workItem from="1524598615945" duration="5069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7977000" />
+    <option name="totallyTimeSpent" value="9840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1280" height="774" extended-state="6" />
@@ -402,6 +403,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
           <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -448,8 +452,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project13-demo/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        <state relative-caret-position="375">
+          <caret line="102" column="46" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
