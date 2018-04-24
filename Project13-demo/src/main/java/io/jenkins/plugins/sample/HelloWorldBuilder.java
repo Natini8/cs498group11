@@ -49,6 +49,38 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         this.useShortened = useShortened;
     }
 
+    public String parseFileShortened(bufferStr){
+
+        //Tests Passed perhaps
+
+        //Tests Failed perhaps
+
+        //Tests Skipped perhaps
+
+        //Counts for each perhaps
+
+        //Files created
+
+        //Lines where errors occured (MAYBE)
+
+    }
+
+    public String parseFile(bufferStr){
+
+        //Tests Passed perhaps
+
+        //Tests Failed perhaps
+
+        //Tests Skipped perhaps
+
+        //Counts for each perhaps
+
+        //Files created
+
+        //Lines where errors occured (MAYBE)
+
+    }
+
     @Override
     public void perform(Run<?, ?> run, FilePath workspace, Launcher launcher, TaskListener listener) throws InterruptedException, IOException {
         long startTime = System.currentTimeMillis();
@@ -65,22 +97,30 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
             }
         } catch (IOException ex) {
             LOGGER.log(Level.SEVERE, ex.getMessage(), ex);
+            return;
         }
 
         // First search in buffer
         String bufferStr = buffer.toString();
         run.addAction(new HelloWorldAction(name));
 
+        //Notify the user of the begenning of the plugin
+        listener.getLogger().println("=================================================");
         if (useShortened) {
             listener.getLogger().println("Short " + name + "!");
+            String output = parseFileShortened(bufferStr);
         } else {
             listener.getLogger().println("Hello, " + name + "!");
+            String output = parseFile(bufferStr);
         }
+        listener.getLogger().println("=================================================");
+
+        listener.getLogger().println(output);
 
         stopTime = System.currentTimeMillis();
         elapsedTimeInSeconds = (stopTime -startTime) / 1000.0;
         listener.getLogger().println("This plugin completed in " + elapsedTimeInSeconds + " seconds");
-        listener.getLogger().println(bufferStr);
+
     }
 
     @Symbol("greet")
