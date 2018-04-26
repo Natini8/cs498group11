@@ -14,6 +14,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 import hudson.tasks.Recorder;
 
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.Reader;
@@ -50,36 +51,16 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         this.useShortened = useShortened;
     }
 
-    public String parseFileShortened(bufferStr){
+    public String parseFileShortened(String bufferStr){
 
-        BufferedReader br = new BufferedReader(new FileReader(bufferStr));
-
-        for (String line = br.readLine(); line != null; line = br.readLine()){
-
-            //Tests Passed perhaps
-
-            //Tests Failed perhaps
-
-            //Tests Skipped perhaps
-
-            //Counts for each perhaps
-
-            //Files created
-
-            //Lines where errors occured (MAYBE)
-
-        }
-
-    }
-
-    public String parseFile(bufferStr){
-
-        BufferedReader br = new BufferedReader(new FileReader(bufferStr));
+        Scanner scanner = new Scanner(bufferStr);
         String output = "";
         boolean skipNext = false;
         boolean compError;
 
-        for (String line = br.readLine(); line != null; line = br.readLine()){
+        while (scanner.hasNextLine()){
+
+            String line = scanner.nextLine();
 
             if(!skipNext) {
 
@@ -100,7 +81,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
                     skipNext = true;
                     compError = true;
 
-                    output.append(line); //For testing to make sure it works
+                    output += line; //For testing to make sure it works
 
                 }
 
@@ -108,11 +89,65 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
             else{
 
-                skipNext == false;
+                skipNext = false;
 
             }
 
         }
+
+        scanner.close();
+
+        return output;
+
+    }
+
+    public String parseFile(String bufferStr){
+
+        Scanner scanner = new Scanner(bufferStr);
+        String output = "";
+        boolean skipNext = false;
+        boolean compError;
+
+        while (scanner.hasNextLine()){
+
+            String line = scanner.nextLine();
+
+            if(!skipNext) {
+
+                //Tests Passed perhaps [Tanner]
+
+                //Tests Failed perhaps [Laura]
+
+                //Tests Skipped perhaps [Harsh]
+
+                //Counts for each perhaps [EVERYONE]
+
+                //Files created [Tanner]
+
+                //If the line announces that future lines will contain compilation errors
+                if (line.contains("COMPILATION ERROR"){
+
+                    //Skip the next line in the build and announce that future lines will be error related
+                    skipNext = true;
+                    compError = true;
+
+                    output += line; //For testing to make sure it works
+
+                }
+
+            }
+
+            else{
+
+                skipNext = false;
+
+            }
+
+        }
+
+        scanner.close();
+
+        return output;
 
     }
 
