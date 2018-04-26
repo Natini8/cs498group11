@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:09:07.16 UTC</timestamp>
+  <md5sum>50faa79d126d0213ab14ccb112a8b76d</md5sum>
+  <fileName>org.mockito:mockito-all-1.9.5.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-core</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:cli</string>
+      <ranges>6-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

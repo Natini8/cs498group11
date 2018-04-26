@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:09:05.794 UTC</timestamp>
+  <md5sum>8fee2c2fbd8443a9693dac3c2850ca74</md5sum>
+  <fileName>org.powermock:powermock-reflect-1.5.6.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-core</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:cli</string>
+      <ranges>6-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

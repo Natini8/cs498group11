@@ -1,0 +1,73 @@
+[INFO] 
+[INFO] --------------< org.jenkins-ci.main:jenkins-test-harness >--------------
+[INFO] Building Test harness for Jenkins and plugins 1.610-SNAPSHOT       [5/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ jenkins-test-harness ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ jenkins-test-harness ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ jenkins-test-harness ---
+[INFO] Maven Version: 3.5.3
+[INFO] JDK Version: 1.8.0_151 normalized as: 1.8.0-151
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-104-generic
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (default) @ jenkins-test-harness ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-banned-dependencies) @ jenkins-test-harness ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ jenkins-test-harness ---
+[INFO] Setting property 'now' to '04/26/2018 21:12 GMT'.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ jenkins-test-harness ---
+[INFO] Setting property 'build.version' to '1.610-SNAPSHOT (private-04/26/2018 21:12 GMT-elst228)'.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ jenkins-test-harness ---
+[INFO] Source directory: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/test/target/generated-sources/localizer added.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ jenkins-test-harness ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ jenkins-test-harness ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jenkins-test-harness ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 22 resources
+[INFO] skip non existing resourceDirectory /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/test/src/filter/resources
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:execute (preset-packager) @ jenkins-test-harness ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jenkins-test-harness ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 70 source files to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/test/target/classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:compile (default) @ jenkins-test-harness ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- animal-sniffer-maven-plugin:1.9:check (default) @ jenkins-test-harness ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateTestStubs (default) @ jenkins-test-harness ---
+[INFO] Generated 45 Java stubs
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jenkins-test-harness ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 108 resources
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ jenkins-test-harness ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 213 source files to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/test/target/test-classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:testCompile (default) @ jenkins-test-harness ---
+[INFO] Compiled 62 Groovy classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ jenkins-test-harness ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ jenkins-test-harness ---
+[INFO] Building jar: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/test/target/jenkins-test-harness-1.610-SNAPSHOT.jar
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ jenkins-test-harness ---
+[INFO] Installing /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/test/target/jenkins-test-harness-1.610-SNAPSHOT.jar to /home/elst228/.m2/repository/org/jenkins-ci/main/jenkins-test-harness/1.610-SNAPSHOT/jenkins-test-harness-1.610-SNAPSHOT.jar
+[INFO] Installing /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/test/pom.xml to /home/elst228/.m2/repository/org/jenkins-ci/main/jenkins-test-harness/1.610-SNAPSHOT/jenkins-test-harness-1.610-SNAPSHOT.pom

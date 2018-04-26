@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:12:46.298 UTC</timestamp>
+  <md5sum>e636959a70e268d9cbfcc703881f4100</md5sum>
+  <fileName>org.jenkins-ci.plugins:matrix-auth-1.0.2.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.plugins:plugin</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-test-harness</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

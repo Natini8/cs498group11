@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:12:09.134 UTC</timestamp>
+  <md5sum>f55d69fa49416a734a6ed2dcea3547b6</md5sum>
+  <fileName>org.apache.sshd:sshd-core-0.8.0.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-war</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

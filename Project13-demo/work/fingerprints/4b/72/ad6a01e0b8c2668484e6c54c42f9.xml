@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:11:22.149 UTC</timestamp>
+  <md5sum>4b72ad6a01e0b8c2668484e6c54c42f9</md5sum>
+  <fileName>com.github.jnr:jnr-posix-3.0.1.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-core</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-war</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.plugins:plugin</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-test-harness</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

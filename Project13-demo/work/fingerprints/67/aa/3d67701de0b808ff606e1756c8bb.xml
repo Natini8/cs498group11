@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:11:22.745 UTC</timestamp>
+  <md5sum>67aa3d67701de0b808ff606e1756c8bb</md5sum>
+  <fileName>com.sun.xml.txw2:txw2-20110809.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-core</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-war</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.plugins:plugin</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-test-harness</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

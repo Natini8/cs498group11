@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:11:31.169 UTC</timestamp>
+  <md5sum>1ab527c37ea972ec0bc9836f34569cce</md5sum>
+  <fileName>org.springframework:spring-webmvc-2.5.6.SEC03.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-core</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-war</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.plugins:plugin</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-test-harness</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

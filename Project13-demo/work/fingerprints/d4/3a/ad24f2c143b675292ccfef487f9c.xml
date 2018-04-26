@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:12:58.907 UTC</timestamp>
+  <md5sum>d43aad24f2c143b675292ccfef487f9c</md5sum>
+  <fileName>xalan:xalan-2.7.1.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.plugins:plugin</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-test-harness</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

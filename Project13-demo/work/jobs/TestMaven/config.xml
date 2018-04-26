@@ -5,7 +5,7 @@
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.0">
-      <projectUrl>https://github.com/Natini8/mp4Assignment.git/</projectUrl>
+      <projectUrl>https://github.com/Natini8/joda-time.git/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
   </properties>
@@ -13,7 +13,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/Natini8/mp4Assignment.git</url>
+        <url>https://github.com/Natini8/joda-time.git</url>
         <credentialsId>e67b07b6-0891-4ef8-b4bc-2fdd8b4723ad</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
@@ -36,6 +36,10 @@
     </com.cloudbees.jenkins.GitHubPushTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
+  <rootModule>
+    <groupId>joda-time</groupId>
+    <artifactId>joda-time</artifactId>
+  </rootModule>
   <goals>clean -Plight-test install</goals>
   <mavenOpts>-Xmx2048m</mavenOpts>
   <aggregatorStyleBuild>true</aggregatorStyleBuild>
@@ -60,7 +64,7 @@
   <postbuilders>
     <io.jenkins.plugins.sample.HelloWorldBuilder plugin="Project13-demo@1.0-SNAPSHOT">
       <name>Elijah</name>
-      <useFrench>false</useFrench>
+      <useShortened>false</useShortened>
     </io.jenkins.plugins.sample.HelloWorldBuilder>
   </postbuilders>
   <runPostStepsIfResult>

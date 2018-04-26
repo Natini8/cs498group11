@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:12:02.119 UTC</timestamp>
+  <original>
+    <name>TestMaven/org.jenkins-ci.main:jenkins-war</name>
+    <number>6</number>
+  </original>
+  <md5sum>9901b417b40456d4138333342b656d6a</md5sum>
+  <fileName>org.jenkins-ci.main:jenkins-war:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-war</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

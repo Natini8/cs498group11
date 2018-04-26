@@ -75,7 +75,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
                 //Files created [Tanner]
 
                 //If the line announces that future lines will contain compilation errors
-                if (line.contains("COMPILATION ERROR"){
+                if (line.contains("COMPILATION ERROR")){
 
                     //Skip the next line in the build and announce that future lines will be error related
                     skipNext = true;
@@ -125,7 +125,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
                 //Files created [Tanner]
 
                 //If the line announces that future lines will contain compilation errors
-                if (line.contains("COMPILATION ERROR"){
+                if (line.contains("COMPILATION ERROR")){
 
                     //Skip the next line in the build and announce that future lines will be error related
                     skipNext = true;
@@ -174,14 +174,16 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         String bufferStr = buffer.toString();
         run.addAction(new HelloWorldAction(name));
 
+	String output;
+
         //Notify the user of the begenning of the plugin
         listener.getLogger().println("=================================================");
         if (useShortened) {
             listener.getLogger().println("Short " + name + "!");
-            String output = parseFileShortened(bufferStr);
+            output = parseFileShortened(bufferStr);
         } else {
             listener.getLogger().println("Hello, " + name + "!");
-            String output = parseFile(bufferStr);
+            output = parseFile(bufferStr);
         }
         listener.getLogger().println("=================================================");
 

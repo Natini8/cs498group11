@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:12:47.76 UTC</timestamp>
+  <md5sum>2f4a71c19c7463261563bb04a0ffa6ca</md5sum>
+  <fileName>org.kohsuke:groovy-sandbox-1.8.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.plugins:plugin</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-test-harness</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

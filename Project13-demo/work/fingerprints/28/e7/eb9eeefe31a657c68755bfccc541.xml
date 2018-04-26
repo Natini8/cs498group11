@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-23 18:56:36.328 UTC</timestamp>
+  <md5sum>28e7eb9eeefe31a657c68755bfccc541</md5sum>
+  <fileName>junit:junit-3.8.2.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>3-5,8</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/joda-time:joda-time</string>
+      <ranges>3-5,8</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

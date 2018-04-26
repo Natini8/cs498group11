@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-23 18:56:36.443 UTC</timestamp>
+  <md5sum>b0da47d5736aa6c16c0da7fd4fcfb8ba</md5sum>
+  <fileName>org.joda:joda-convert-1.2.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>3-5,8</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/joda-time:joda-time</string>
+      <ranges>3-5,8</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

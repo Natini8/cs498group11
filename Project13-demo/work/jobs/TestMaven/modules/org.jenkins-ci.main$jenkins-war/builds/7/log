@@ -1,0 +1,98 @@
+[INFO] 
+[INFO] ------------------< org.jenkins-ci.main:jenkins-war >-------------------
+[INFO] Building Jenkins war 1.610-SNAPSHOT                                [4/6]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ jenkins-war ---
+[INFO] Deleting /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ jenkins-war ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ jenkins-war ---
+[INFO] Maven Version: 3.5.3
+[INFO] JDK Version: 1.8.0_151 normalized as: 1.8.0-151
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-104-generic
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (default) @ jenkins-war ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-banned-dependencies) @ jenkins-war ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ jenkins-war ---
+[INFO] Setting property 'now' to '04/26/2018 21:24 GMT'.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ jenkins-war ---
+[INFO] Setting property 'build.version' to '1.610-SNAPSHOT (private-04/26/2018 21:24 GMT-elst228)'.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ jenkins-war ---
+[INFO] Source directory: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/generated-sources/localizer added.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ jenkins-war ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:list (list-dependencies) @ jenkins-war ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:unpack-dependencies (executable-war-header) @ jenkins-war ---
+[INFO] Unpacking /home/elst228/.m2/repository/org/jenkins-ci/executable-war/1.29/executable-war-1.29.jar to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins with includes "**/*.class" and excludes ""
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:copy (resgen) @ jenkins-war ---
+[INFO] Configured Artifact: org.jenkins-ci.main:remoting:?:jar
+[INFO] Configured Artifact: org.jenkins-ci.main:remoting:?:jar
+[INFO] Configured Artifact: org.jenkins-ci.main:cli:jar-with-dependencies:?:jar
+[INFO] Configured Artifact: org.jenkins-ci:winstone:?:jar
+[INFO] Configured Artifact: org.jenkins-ci.main:maven-plugin:?:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:ssh-slaves:1.9:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:credentials:1.18:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:ssh-credentials:1.10:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:subversion:1.54:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:cvs:2.11:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:ant:1.2:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:javadoc:1.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:translation:1.10:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:external-monitor-job:1.4:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:ldap:1.6:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:pam-auth:1.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:mailer:1.11:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:matrix-auth:1.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:windows-slaves:1.0:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:antisamy-markup-formatter:1.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:matrix-project:1.4.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:script-security:1.13:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:junit:1.2-beta-4:hpi
+[INFO] Copying remoting-2.50.jar to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/remoting.jar
+[INFO] Copying remoting-2.50.jar to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/slave.jar
+[INFO] Copying cli-1.610-SNAPSHOT-jar-with-dependencies.jar to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/jenkins-cli.jar
+[INFO] Copying winstone-2.8.jar to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/winstone.jar
+[INFO] Copying maven-plugin-2.7.1.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/maven-plugin.hpi
+[INFO] Copying ssh-slaves-1.9.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/ssh-slaves.hpi
+[INFO] Copying credentials-1.18.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/credentials.hpi
+[INFO] Copying ssh-credentials-1.10.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/ssh-credentials.hpi
+[INFO] Copying subversion-1.54.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/subversion.hpi
+[INFO] Copying cvs-2.11.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/cvs.hpi
+[INFO] Copying ant-1.2.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/ant.hpi
+[INFO] Copying javadoc-1.1.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/javadoc.hpi
+[INFO] Copying translation-1.10.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/translation.hpi
+[INFO] Copying external-monitor-job-1.4.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/external-monitor-job.hpi
+[INFO] Copying ldap-1.6.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/ldap.hpi
+[INFO] Copying pam-auth-1.1.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/pam-auth.hpi
+[INFO] Copying mailer-1.11.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/mailer.hpi
+[INFO] Copying matrix-auth-1.1.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/matrix-auth.hpi
+[INFO] Copying windows-slaves-1.0.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/windows-slaves.hpi
+[INFO] Copying antisamy-markup-formatter-1.1.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/antisamy-markup-formatter.hpi
+[INFO] Copying matrix-project-1.4.1.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/matrix-project.hpi
+[INFO] Copying script-security-1.13.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/script-security.hpi
+[INFO] Copying junit-1.2-beta-4.hpi to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/target/jenkins/WEB-INF/plugins/junit.hpi
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ jenkins-war ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jenkins-war ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/src/main/resources
+[INFO] skip non existing resourceDirectory /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/war/src/filter/resources
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jenkins-war ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-license-plugin:1.7:process (default) @ jenkins-war ---
+Started
+Finished: ABORTED

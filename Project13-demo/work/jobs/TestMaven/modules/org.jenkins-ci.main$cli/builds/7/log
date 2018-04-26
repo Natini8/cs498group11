@@ -1,0 +1,94 @@
+[INFO] 
+[INFO] ----------------------< org.jenkins-ci.main:cli >-----------------------
+[INFO] Building Jenkins cli 1.610-SNAPSHOT                                [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cli ---
+[INFO] Deleting /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ cli ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ cli ---
+[INFO] Maven Version: 3.5.3
+[INFO] JDK Version: 1.8.0_151 normalized as: 1.8.0-151
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-104-generic
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (default) @ cli ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-banned-dependencies) @ cli ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ cli ---
+[INFO] Setting property 'now' to '04/26/2018 21:21 GMT'.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ cli ---
+[INFO] Setting property 'build.version' to '1.610-SNAPSHOT (private-04/26/2018 21:21 GMT-elst228)'.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ cli ---
+[INFO] Source directory: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target/generated-sources/localizer added.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ cli ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-localizer-plugin:1.23:generate (default) @ cli ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ cli ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target/classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:compile (default) @ cli ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- animal-sniffer-maven-plugin:1.9:check (default) @ cli ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateTestStubs (default) @ cli ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target/test-classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:testCompile (default) @ cli ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ cli ---
+[INFO] Surefire report directory: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running hudson.cli.ConnectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec - in hudson.cli.ConnectionTest
+Running hudson.cli.PrivateKeyProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.697 sec - in hudson.cli.PrivateKeyProviderTest
+Running hudson.cli.ConnectionMockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.475 sec - in hudson.cli.ConnectionMockTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ cli ---
+[INFO] Building jar: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target/cli-1.610-SNAPSHOT.jar
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-assembly-plugin:2.4:attached (default) @ cli ---
+[INFO] Building jar: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target/cli-1.610-SNAPSHOT-jar-with-dependencies.jar
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cli ---
+[INFO] Installing /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target/cli-1.610-SNAPSHOT.jar to /home/elst228/.m2/repository/org/jenkins-ci/main/cli/1.610-SNAPSHOT/cli-1.610-SNAPSHOT.jar
+[INFO] Installing /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/pom.xml to /home/elst228/.m2/repository/org/jenkins-ci/main/cli/1.610-SNAPSHOT/cli-1.610-SNAPSHOT.pom
+[INFO] Installing /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/cli/target/cli-1.610-SNAPSHOT-jar-with-dependencies.jar to /home/elst228/.m2/repository/org/jenkins-ci/main/cli/1.610-SNAPSHOT/cli-1.610-SNAPSHOT-jar-with-dependencies.jar

@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-23 18:07:52.602 UTC</timestamp>
+  <md5sum>7a7a3ecbffc49adc1092fd4ae388acc0</md5sum>
+  <fileName>Credential id=e67b07b6-0891-4ef8-b4bc-2fdd8b4723ad name=Natini8/******</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>3-8</ranges>
+    </entry>
+    <entry>
+      <string>test</string>
+      <ranges>10</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

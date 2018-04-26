@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-23 18:56:36.31 UTC</timestamp>
+  <original>
+    <name>TestMaven/joda-time:joda-time</name>
+    <number>3</number>
+  </original>
+  <md5sum>6a02d9d596aceefadb1b6d8fe2b1b1d8</md5sum>
+  <fileName>joda-time:joda-time:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>3-5,8</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/joda-time:joda-time</string>
+      <ranges>3-5,8</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:09:05.470 UTC</timestamp>
+  <original>
+    <name>TestMaven/org.jenkins-ci.main:cli</name>
+    <number>6</number>
+  </original>
+  <md5sum>ee71773396fb0c99db2f9c8c0036f442</md5sum>
+  <fileName>org.jenkins-ci.main:cli-1.610-SNAPSHOT-jar-with-dependencies.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-war</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:cli</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

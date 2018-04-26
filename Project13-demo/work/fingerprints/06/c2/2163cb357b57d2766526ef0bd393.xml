@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:12:02.210 UTC</timestamp>
+  <original>
+    <name>TestMaven/org.jenkins-ci.main:jenkins-war</name>
+    <number>6</number>
+  </original>
+  <md5sum>06c22163cb357b57d2766526ef0bd393</md5sum>
+  <fileName>org.jenkins-ci.main:licenses.html</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-war</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

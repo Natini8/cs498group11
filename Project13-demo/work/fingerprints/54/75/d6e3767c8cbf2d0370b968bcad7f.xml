@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:11:24.436 UTC</timestamp>
+  <md5sum>5475d6e3767c8cbf2d0370b968bcad7f</md5sum>
+  <fileName>org.kohsuke.metainf-services:metainf-services-1.4.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-core</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

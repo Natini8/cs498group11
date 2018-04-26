@@ -1,0 +1,28 @@
+[INFO] 
+[INFO] -------------------< org.jenkins-ci.plugins:plugin >--------------------
+[INFO] Building Jenkins plugin POM 1.610-SNAPSHOT                         [6/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ plugin ---
+[INFO] Deleting /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/plugins/target
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ plugin ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ plugin ---
+[INFO] Maven Version: 3.5.3
+[INFO] JDK Version: 1.8.0_151 normalized as: 1.8.0-151
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-104-generic
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-localizer-plugin:1.14:generate (default) @ plugin ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-1:generateTestStubs (test-in-groovy) @ plugin ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-1:testCompile (test-in-groovy) @ plugin ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-license-plugin:1.7:process (default) @ plugin ---
+[INFO] Generated /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/plugins/target/plugin/WEB-INF/licenses.xml
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ plugin ---
+[INFO] Installing /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/plugins/pom.xml to /home/elst228/.m2/repository/org/jenkins-ci/plugins/plugin/1.610-SNAPSHOT/plugin-1.610-SNAPSHOT.pom

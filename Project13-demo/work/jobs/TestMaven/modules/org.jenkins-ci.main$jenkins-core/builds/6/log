@@ -1,0 +1,530 @@
+[INFO] 
+[INFO] ------------------< org.jenkins-ci.main:jenkins-core >------------------
+[INFO] Building Jenkins core 1.610-SNAPSHOT                               [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ jenkins-core ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ jenkins-core ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ jenkins-core ---
+[INFO] Maven Version: 3.5.3
+[INFO] JDK Version: 1.8.0_151 normalized as: 1.8.0-151
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-104-generic
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (default) @ jenkins-core ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-banned-dependencies) @ jenkins-core ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ jenkins-core ---
+[INFO] Setting property 'now' to '04/26/2018 21:09 GMT'.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ jenkins-core ---
+[INFO] Setting property 'build.version' to '1.610-SNAPSHOT (private-04/26/2018 21:09 GMT-elst228)'.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ jenkins-core ---
+[INFO] Source directory: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/generated-sources/antlr added.
+[INFO] Source directory: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/generated-sources/localizer added.
+[INFO] Source directory: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/generated-sources/taglib-interface added.
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-localizer-plugin:1.23:generate (default) @ jenkins-core ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- antlr-maven-plugin:2.1:generate (cron) @ jenkins-core ---
+[INFO] Using Antlr grammar: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/src/main/grammar/crontab.g
+ANTLR Parser Generator   Version 2.7.6 (2005-12-22)   1989-2005
+
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- antlr-maven-plugin:2.1:generate (labelExpr) @ jenkins-core ---
+[INFO] Using Antlr grammar: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/src/main/grammar/labelExpr.g
+ANTLR Parser Generator   Version 2.7.6 (2005-12-22)   1989-2005
+/home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/src/main/grammar/labelExpr.g: warning:lexical nondeterminism between rules IMPLIES and ATOM upon
+/home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/src/main/grammar/labelExpr.g:     k==1:'-'
+
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ jenkins-core ---
+[INFO] Generated 3 Java stubs
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ jenkins-core ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-hpi-plugin:1.110:generate-taglib-interface (default) @ jenkins-core ---
+[INFO] lib/FormTagLib.java
+[INFO] lib/JenkinsTagLib.java
+[INFO] lib/LayoutTagLib.java
+[INFO] lib/TestTagLib.java
+[INFO] lib/JenkinsTagLib.gdsl
+[INFO] lib/FormTagLib.gdsl
+[INFO] lib/LayoutTagLib.gdsl
+[INFO] lib/TestTagLib.gdsl
+[INFO] jenkins/PluginManagerTagLib.java
+[INFO] jenkins/ToolsTagLib.java
+[INFO] jenkins/PluginManagerTagLib.gdsl
+[INFO] jenkins/ToolsTagLib.gdsl
+[INFO] lib/jenkins/NewFromListTagLib.java
+[INFO] lib/jenkins/ProjectTagLib.java
+[INFO] lib/jenkins/ProjectTagLib.gdsl
+[INFO] lib/jenkins/NewFromListTagLib.gdsl
+[INFO] jenkins/security/HudsonPrivateSecurityRealmTagLib.java
+[INFO] jenkins/security/HudsonPrivateSecurityRealmTagLib.gdsl
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:copy (winsw) @ jenkins-core ---
+[INFO] Configured Artifact: com.sun.winsw:winsw:bin:1.16:exe
+[INFO] Copying winsw-1.16-bin.exe to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/classes/windows-service/jenkins.exe
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jenkins-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7931 resources
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jenkins-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 979 source files to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-encoding-plugin:1.1:check-encoding (default) @ jenkins-core ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:compile (default) @ jenkins-core ---
+[INFO] Compiled 15 Groovy classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- animal-sniffer-maven-plugin:1.9:check (default) @ jenkins-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.0
+[INFO] 
+[INFO] --- bridge-method-injector:1.13:process (default) @ jenkins-core ---
+[INFO] 
+[INFO] --- access-modifier-checker:1.4:enforce (default) @ jenkins-core ---
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateTestStubs (default) @ jenkins-core ---
+[INFO] Generated 9 Java stubs
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jenkins-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ jenkins-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 95 source files to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/test-classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:testCompile (default) @ jenkins-core ---
+[INFO] Compiled 18 Groovy classes
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ jenkins-core ---
+[INFO] Surefire report directory: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=128m; support was removed in 8.0
+Running jenkins.model.lazy.SortedIntListTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in jenkins.model.lazy.SortedIntListTest
+Running jenkins.model.lazy.AbstractLazyLoadRunMapTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.513 sec - in jenkins.model.lazy.AbstractLazyLoadRunMapTest
+Running jenkins.model.lazy.SortedListTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in jenkins.model.lazy.SortedListTest
+Running jenkins.model.JenkinsGetRootUrlTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.3 sec - in jenkins.model.JenkinsGetRootUrlTest
+Running jenkins.model.PeepholePermalinkTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in jenkins.model.PeepholePermalinkTest
+Running jenkins.model.RunIdMigratorTest
+/home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit5562809066413470840/jobs/somefolder/jobs/someproject/promotions/OK/builds has been restored to its original format
+/home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit7309326458114392236/jobs/someproject/modules/test$test/builds has been restored to its original format
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator migrate
+INFO: Migrating build records in /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit7974123852701853728
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator migrate
+INFO: Migrating build records in /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit7974123852701853728
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: ignoring nonnumeric entry lastSuccessfulBuild
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: ignoring nonnumeric entry 2014-01-02_03-04-05
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: deleting build number symlink 99 → 2014-01-02_03-04-05
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: ignoring nonnumeric entry lastFailedBuild
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: skipping non-directory lastSuccessfulBuild
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: fully processed 2014-01-02_03-04-05 → 99
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: skipping non-directory lastFailedBuild
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator migrate
+FINER: migration already performed for /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit7974123852701853728
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator migrate
+FINER: migration already performed for /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit8741211415240179377
+Got expected move exception: java.nio.file.FileAlreadyExistsException: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit2785589163718105635/junit68969424995957315.tmp
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator migrate
+INFO: Migrating build records in /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit632355175835132408
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator migrate
+INFO: Migrating build records in /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit632355175835132408
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: ignoring nonnumeric entry lastSuccessfulBuild
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: deleting build number symlink 98 → 2014-01-02_03-04-04
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: ignoring nonnumeric entry 2014-01-02_03-04-04
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: ignoring build directory 99
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: ignoring nonnumeric entry lastFailedBuild
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+WARNING: found unexpected dir lastSuccessfulBuild
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+WARNING: found unexpected dir lastSuccessfulBuild
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: fully processed 2014-01-02_03-04-04 → 98
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: skipping new build dir 99
+Apr 26, 2018 4:09:56 PM jenkins.model.RunIdMigrator doMigrate
+FINE: skipping non-directory lastFailedBuild
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in jenkins.model.RunIdMigratorTest
+Running jenkins.model.CoreEnvironmentContributorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.662 sec - in jenkins.model.CoreEnvironmentContributorTest
+Running jenkins.model.IdStrategyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in jenkins.model.IdStrategyTest
+Running jenkins.model.JenkinsDescriptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.511 sec - in jenkins.model.JenkinsDescriptorTest
+Running jenkins.security.HMACConfidentialKeyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.987 sec - in jenkins.security.HMACConfidentialKeyTest
+Running jenkins.security.DefaultConfidentialStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.753 sec - in jenkins.security.DefaultConfidentialStoreTest
+Running jenkins.security.HexStringConfidentialKeyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in jenkins.security.HexStringConfidentialKeyTest
+Running jenkins.security.CryptoConfidentialKeyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in jenkins.security.CryptoConfidentialKeyTest
+Running jenkins.RemotingJarSignatureTest
+Verifying /home/elst228/.m2/repository/org/jenkins-ci/main/remoting/2.50/remoting-2.50.jar
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in jenkins.RemotingJarSignatureTest
+Running jenkins.util.VirtualFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in jenkins.util.VirtualFileTest
+Running jenkins.util.MarkFindingOutputStreamTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in jenkins.util.MarkFindingOutputStreamTest
+Running jenkins.util.xstream.XStreamDOMTest
+<jenkins.util.xstream.XStreamDOM>
+  <jenkins.util.xstream.XStreamDOMTest_-Name__That__Gets__Escaped/>
+</jenkins.util.xstream.XStreamDOM>
+<foo>
+  <bar>
+    <test1 key="value">text!</test1>
+  </bar>
+  <zot>
+    <test2 key="value">
+      <test1 key="value">text!</test1>
+    </test2>
+  </zot>
+</foo>
+<foo>
+  <bar>
+    <test1 key="value">text!</test1>
+  </bar>
+  <zot>
+    <test2 key="value">
+      <test1 key="value">text!</test1>
+    </test2>
+  </zot>
+</foo>
+<jenkins.util.xstream.XStreamDOM>
+  <string-array/>
+</jenkins.util.xstream.XStreamDOM>
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in jenkins.util.xstream.XStreamDOMTest
+Running jenkins.util.AtmostOneTaskExecutorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.574 sec - in jenkins.util.AtmostOneTaskExecutorTest
+Running jenkins.util.TreeStringBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in jenkins.util.TreeStringBuilderTest
+Running jenkins.util.TimerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in jenkins.util.TimerTest
+Running jenkins.xml.XMLUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.283 sec - in jenkins.xml.XMLUtilsTest
+Running jenkins.ResilientJsonObjectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in jenkins.ResilientJsonObjectTest
+Running hudson.PluginManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in hudson.PluginManagerTest
+Running hudson.model.FileParameterValueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in hudson.model.FileParameterValueTest
+Running hudson.model.RunTest
+Apr 26, 2018 4:10:04 PM hudson.model.Run onEndBuilding
+WARNING: {0}: No build result is set, so marking as failure. This should not happen.
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec - in hudson.model.RunTest
+Running hudson.model.ItemsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in hudson.model.ItemsTest
+Running hudson.model.FingerprintTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in hudson.model.FingerprintTest
+Running hudson.model.listeners.SCMListenerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 sec - in hudson.model.listeners.SCMListenerTest
+Running hudson.model.ViewTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in hudson.model.ViewTest
+Running hudson.model.AbstractItemTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in hudson.model.AbstractItemTest
+Running hudson.model.BuildStatusSummaryTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in hudson.model.BuildStatusSummaryTest
+Running hudson.model.BallColorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in hudson.model.BallColorTest
+Running hudson.model.TaskActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in hudson.model.TaskActionTest
+Running hudson.model.JobTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in hudson.model.JobTest
+Running hudson.model.ListViewTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.565 sec - in hudson.model.ListViewTest
+Running hudson.model.ResourceListTest
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=2 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=3 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=4 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=5 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=6 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=7 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=7 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=8 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=9 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=10 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=11 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with E1927512926176735975(1)=1 and E1927512926176735975(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=5 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=1 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=6 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=1 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=7 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=1 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=8 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=1 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=9 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with F5274012497411174555(5)=1 and F5274012497411174555(5)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)/A-6688467811848818630(1)=1 and A-4962768465676381896(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)/A-6688467811848818630(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)/A-8292973307042192125(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)/A-8292973307042192125(1)=1 and A-4962768465676381896(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with C5072005423257391728(3)/C2377732757510138102(3)=3 and C5072005423257391728(3)/C2377732757510138102(3)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with C5072005423257391728(3)/C2377732757510138102(3)=1 and C5072005423257391728(3)/C2377732757510138102(3)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)/A4437113781045784766(1)
+Apr 26, 2018 4:10:07 PM hudson.model.ResourceList _getConflict
+INFO: Collision with A-4962768465676381896(1)=1 and A-4962768465676381896(1)
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in hudson.model.ResourceListTest
+Running hudson.model.LoadStatisticsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.361 sec - in hudson.model.LoadStatisticsTest
+Running hudson.model.ParametersActionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in hudson.model.ParametersActionTest
+Running hudson.model.AutoCompleteSeederTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in hudson.model.AutoCompleteSeederTest
+Running hudson.model.ComputerTest
+Apr 26, 2018 4:10:08 PM hudson.model.Computer relocateOldLogs
+INFO: Relocated log file /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/jenkins6096817930580244474test/slave-def.log.5 to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/jenkins6096817930580244474test/logs/slaves/def/slave.log.5
+Apr 26, 2018 4:10:08 PM hudson.model.Computer relocateOldLogs
+INFO: Relocated log file /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/jenkins6096817930580244474test/slave-abc.log to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/jenkins6096817930580244474test/logs/slaves/abc/slave.log
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in hudson.model.ComputerTest
+Running hudson.model.DisplayNameListenerTest
+Apr 26, 2018 4:10:08 PM hudson.model.DisplayNameListener onRenamed
+INFO: onRenamed():Setting displayname to null for item.name=new job name
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in hudson.model.DisplayNameListenerTest
+Running hudson.model.RunParameterValueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in hudson.model.RunParameterValueTest
+Running hudson.model.ChoiceParameterDefinitionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in hudson.model.ChoiceParameterDefinitionTest
+Running hudson.model.ActionableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.model.ActionableTest
+Running hudson.model.TimeSeriesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in hudson.model.TimeSeriesTest
+Running hudson.FunctionsTest
+Apr 26, 2018 4:10:21 PM hudson.Functions getActionUrl
+WARNING: Failed to parse URL for action: java.net.URISyntaxException: Illegal character in query at index 35: http://nowhere.net/stuff?something=^woohoo
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 13.29 sec - in hudson.FunctionsTest
+Running hudson.logging.LogRecorderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in hudson.logging.LogRecorderTest
+Running hudson.console.UrlAnnotatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in hudson.console.UrlAnnotatorTest
+Running hudson.tasks._maven.Maven3MojoNoteTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.tasks._maven.Maven3MojoNoteTest
+Running hudson.ProxyConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 sec - in hudson.ProxyConfigurationTest
+Running hudson.search.SearchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in hudson.search.SearchTest
+Running hudson.util.SecretTest
+R4L497/ADtBLNRNz6zW486lB63Y/Pv97uT3Bfdxx3Ms=
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in hudson.util.SecretTest
+Running hudson.util.PackedMapTest
+a=b
+c=d
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in hudson.util.PackedMapTest
+Running hudson.util.DirScannerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in hudson.util.DirScannerTest
+Running hudson.util.FormValidationTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.631 sec - in hudson.util.FormValidationTest
+Running hudson.util.RobustReflectionConverterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in hudson.util.RobustReflectionConverterTest
+Running hudson.util.SecretRewriterTest
+Scanning /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/b/foo.xml
+Copied /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/b/foo.xml to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/backup/b/foo.xml as a backup
+Rewritten /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/b/foo.xml
+Cycle detected: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/b/symlink
+Copied /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/c/foo.xml to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/backup/c/foo.xml as a backup
+Rewritten /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/c/foo.xml
+Copied /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/c/d/e/foo.xml to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/backup/c/d/e/foo.xml as a backup
+Rewritten /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/c/d/e/foo.xml
+Copied /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/c/d/foo.xml to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/backup/c/d/foo.xml as a backup
+Rewritten /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/c/d/foo.xml
+Cycle detected: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/c/symlink
+Copied /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/a/foo.xml to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/backup/a/foo.xml as a backup
+Rewritten /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/a/foo.xml
+Copied /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/a/symlink/foo.xml to /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/backup/a/symlink/foo.xml as a backup
+Rewritten /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit6092299612762682933/t/a/symlink/foo.xml
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.437 sec - in hudson.util.SecretRewriterTest
+Running hudson.util.ArgumentListBuilderTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in hudson.util.ArgumentListBuilderTest
+Running hudson.util.LineEndNormalizingWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.util.LineEndNormalizingWriterTest
+Running hudson.util.CyclicGraphDetectorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in hudson.util.CyclicGraphDetectorTest
+Running hudson.util.RunListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.695 sec - in hudson.util.RunListTest
+Running hudson.util.CopyOnWriteListTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in hudson.util.CopyOnWriteListTest
+Running hudson.util.ConsistentHashTest
+data2
+1402
+82/918
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.489 sec - in hudson.util.ConsistentHashTest
+Running hudson.util.ProcessTreeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.474 sec - in hudson.util.ProcessTreeTest
+Running hudson.util.CopyOnWriteMapTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in hudson.util.CopyOnWriteMapTest
+Running hudson.util.SubClassGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in hudson.util.SubClassGeneratorTest
+Running hudson.util.XStream2Test
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in hudson.util.XStream2Test
+Running hudson.util.io.ZipArchiverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in hudson.util.io.ZipArchiverTest
+Running hudson.util.io.ReopenableRotatingFileOutputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in hudson.util.io.ReopenableRotatingFileOutputStreamTest
+Running hudson.util.io.TarArchiverTest
+[extract] $ tar xvpf /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/test115878601351974091tar
+[extract] $ unzip /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/test2233617991887857542zip
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in hudson.util.io.TarArchiverTest
+Running hudson.util.XStream2EncodingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in hudson.util.XStream2EncodingTest
+Running hudson.util.IteratorsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in hudson.util.IteratorsTest
+Running hudson.util.QuotedStringTokenizerTest
+[foo, bar]
+[foo, bar zot]
+[foo, bar=quote zot]
+[foo"]
+[foo bar]
+[foo\, bar]
+[foo=bar\zot]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.util.QuotedStringTokenizerTest
+Running hudson.BulkChangeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.BulkChangeTest
+Running hudson.FilePathTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 29.078 sec - in hudson.FilePathTest
+Running hudson.EnvVarsTest
+Apr 26, 2018 4:10:59 PM hudson.EnvVars$OverrideOrderCalculator cutCycleAt
+WARNING: Cyclic reference detected: A -> B -> C -> A
+Apr 26, 2018 4:10:59 PM hudson.EnvVars$OverrideOrderCalculator cutCycleAt
+WARNING: Cut the reference B -> C
+Apr 26, 2018 4:10:59 PM hudson.EnvVars$OverrideOrderCalculator cutCycleAt
+WARNING: Cyclic reference detected: D -> E -> D
+Apr 26, 2018 4:10:59 PM hudson.EnvVars$OverrideOrderCalculator cutCycleAt
+WARNING: Cut the reference E -> D
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in hudson.EnvVarsTest
+Running hudson.slaves.NodeListTest
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.slaves.NodeList>
+  <hudson.slaves.NodeListTest_-DummyNode>
+    <nodeName>6215596243626528449</nodeName>
+  </hudson.slaves.NodeListTest_-DummyNode>
+</hudson.slaves.NodeList>
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in hudson.slaves.NodeListTest
+Running hudson.slaves.ComputerLauncherTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in hudson.slaves.ComputerLauncherTest
+Running hudson.MarkupTextTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in hudson.MarkupTextTest
+Running hudson.UtilTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.112 sec - in hudson.UtilTest
+Running hudson.scheduler.CronTabEventualityTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in hudson.scheduler.CronTabEventualityTest
+Running hudson.scheduler.CronTabDayOfWeekLocaleTest
+Tests run: 2983, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.519 sec - in hudson.scheduler.CronTabDayOfWeekLocaleTest
+Running hudson.scheduler.CronTabTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in hudson.scheduler.CronTabTest
+Running hudson.LauncherTest
+$ sh -c "echo $$$$ > /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/junit5244527823128115338/junit2162696025601611526.tmp; sleep 30"
+Terminated
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.342 sec - in hudson.LauncherTest
+Running hudson.cli.handlers.ViewOptionHandlerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.143 sec - in hudson.cli.handlers.ViewOptionHandlerTest
+Running hudson.cli.ListJobsCommandTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.945 sec - in hudson.cli.ListJobsCommandTest
+
+Results :
+
+Tests run: 3392, Failures: 0, Errors: 0, Skipped: 3
+
+[JENKINS] Recording test results
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ jenkins-core ---
+[INFO] Building jar: /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/jenkins-core-1.610-SNAPSHOT.jar
+[INFO] 
+[8mha:////4ONM1IVWru123SBcua+/KjEEZVhtfeVOaSK1MCwPR4kMAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ jenkins-core ---
+[INFO] Installing /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/target/jenkins-core-1.610-SNAPSHOT.jar to /home/elst228/.m2/repository/org/jenkins-ci/main/jenkins-core/1.610-SNAPSHOT/jenkins-core-1.610-SNAPSHOT.jar
+[INFO] Installing /home/elst228/Desktop/cs498group11/Project13-demo/work/jobs/TestMaven/workspace/core/pom.xml to /home/elst228/.m2/repository/org/jenkins-ci/main/jenkins-core/1.610-SNAPSHOT/jenkins-core-1.610-SNAPSHOT.pom

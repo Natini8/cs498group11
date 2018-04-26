@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 21:09:06.247 UTC</timestamp>
+  <md5sum>82b899580da472be37055da949b731fa</md5sum>
+  <fileName>commons-codec:commons-codec-1.4.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>6-7</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:jenkins-test-harness</string>
+      <ranges>6</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/org.jenkins-ci.main:cli</string>
+      <ranges>6-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
