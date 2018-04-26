@@ -75,20 +75,42 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
     public String parseFile(bufferStr){
 
         BufferedReader br = new BufferedReader(new FileReader(bufferStr));
+        String output = "";
+        boolean skipNext = false;
+        boolean compError;
 
         for (String line = br.readLine(); line != null; line = br.readLine()){
 
-            //Tests Passed perhaps [Tanner]
+            if(!skipNext) {
 
-            //Tests Failed perhaps [Laura]
+                //Tests Passed perhaps [Tanner]
 
-            //Tests Skipped perhaps [Harsh]
+                //Tests Failed perhaps [Laura]
 
-            //Counts for each perhaps [EVERYONE]
+                //Tests Skipped perhaps [Harsh]
 
-            //Files created [Tanner]
+                //Counts for each perhaps [EVERYONE]
 
-            //Lines where errors occured (MAYBE)  [Elijah]
+                //Files created [Tanner]
+
+                //If the line announces that future lines will contain compilation errors
+                if (line.contains("COMPILATION ERROR"){
+
+                    //Skip the next line in the build and announce that future lines will be error related
+                    skipNext = true;
+                    compError = true;
+
+                    output.append(line); //For testing to make sure it works
+
+                }
+
+            }
+
+            else{
+
+                skipNext == false;
+
+            }
 
         }
 
