@@ -127,18 +127,37 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
                 //If the line announces that future lines will contain compilation errors
                 if (line.contains("COMPILATION ERROR")){
 
-                    //Skip the next line in the build and announce that future lines will be error related
+                    //Skip the next line in the build file and announce that future lines will be compilation error related
                     skipNext = true;
                     compError = true;
 
-                    output += line; //For testing to make sure it works
+                    //Append line to output
+                    output += line;
+
+                }
+
+                //If it was annouced that future lines are compilation errors
+                if (compError){
+
+                    //Append line to output
+                    output += line;
+
+                    //If line contains [INFO], it is the final line related to compilation errors
+                    if (line.contains("[INFO]")){
+
+                        //Remove the announcement that future lines are compilation error related
+                        compError = false;
+
+                    }
 
                 }
 
             }
 
+            //If the the current line is skipped
             else{
 
+                //Allow future lines to be read
                 skipNext = false;
 
             }
