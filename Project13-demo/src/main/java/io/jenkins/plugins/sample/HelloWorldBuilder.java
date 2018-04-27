@@ -185,13 +185,13 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
             listener.getLogger().println("Hello, " + name + "!");
             output = parseFile(bufferStr);
         }
-        listener.getLogger().println("=================================================");
 
         listener.getLogger().println(output);
 
         stopTime = System.currentTimeMillis();
         elapsedTimeInSeconds = (stopTime -startTime) / 1000.0;
         listener.getLogger().println("This plugin completed in " + elapsedTimeInSeconds + " seconds");
+        listener.getLogger().println("=================================================");
 
     }
 
