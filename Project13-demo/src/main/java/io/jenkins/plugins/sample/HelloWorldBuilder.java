@@ -87,18 +87,6 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
                 //Files created [Tanner]
 
-                //If the line announces that future lines will contain compilation errors
-                if (line.contains("COMPILATION ERROR")){
-
-                    //Skip the next line in the build file and announce that future lines will be compilation error related
-                    skipNext = true;
-                    compError = true;
-
-                    //Append line to output
-                    output += getLineWithNewLine(line);
-
-                }
-
                 //If it was annouced that future lines are compilation errors
                 if (compError){
 
@@ -112,6 +100,18 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
                         compError = false;
 
                     }
+
+                }
+
+                //If the line announces that future lines will contain compilation errors
+                if (line.contains("COMPILATION ERROR")){
+
+                    //Skip the next line in the build file and announce that future lines will be compilation error related
+                    skipNext = true;
+                    compError = true;
+
+                    //Append line to output
+                    output += getLineWithNewLine(line);
 
                 }
 
