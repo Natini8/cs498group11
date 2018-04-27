@@ -51,53 +51,16 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         this.useShortened = useShortened;
     }
 
+    public String getLineWithNewLine(String line){
+
+	line += "\n";
+	return line;
+
+    }
+
     public String parseFileShortened(String bufferStr){
 
-        Scanner scanner = new Scanner(bufferStr);
-        String output = "";
-        boolean skipNext = false;
-        boolean compError;
-
-        while (scanner.hasNextLine()){
-
-            String line = scanner.nextLine();
-
-            if(!skipNext) {
-
-                //Tests Passed perhaps [Tanner]
-
-                //Tests Failed perhaps [Laura]
-
-                //Tests Skipped perhaps [Harsh]
-
-                //Counts for each perhaps [EVERYONE]
-
-                //Files created [Tanner]
-
-                //If the line announces that future lines will contain compilation errors
-                if (line.contains("COMPILATION ERROR")){
-
-                    //Skip the next line in the build and announce that future lines will be error related
-                    skipNext = true;
-                    compError = true;
-
-                    output += line; //For testing to make sure it works
-
-                }
-
-            }
-
-            else{
-
-                skipNext = false;
-
-            }
-
-        }
-
-        scanner.close();
-
-        return output;
+	return "";
 
     }
 
@@ -106,7 +69,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         Scanner scanner = new Scanner(bufferStr);
         String output = "";
         boolean skipNext = false;
-        boolean compError;
+        boolean compError = false;
 
         while (scanner.hasNextLine()){
 
@@ -132,7 +95,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
                     compError = true;
 
                     //Append line to output
-                    output += line;
+                    output += getLineWithNewLine(line);
 
                 }
 
@@ -140,7 +103,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
                 if (compError){
 
                     //Append line to output
-                    output += line;
+                    output += getLineWithNewLine(line);
 
                     //If line contains [INFO], it is the final line related to compilation errors
                     if (line.contains("[INFO]")){
