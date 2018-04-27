@@ -6,11 +6,11 @@
   <usages>
     <entry>
       <string>TestMaven</string>
-      <ranges>3-5,8-11</ranges>
+      <ranges>3-5,8-15</ranges>
     </entry>
     <entry>
       <string>TestMaven/joda-time:joda-time</string>
-      <ranges>3-5,8-11</ranges>
+      <ranges>3-5,8-15</ranges>
     </entry>
   </usages>
   <facets/>

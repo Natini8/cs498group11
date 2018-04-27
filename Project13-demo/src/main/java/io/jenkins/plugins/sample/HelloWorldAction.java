@@ -6,15 +6,15 @@ import jenkins.model.RunAction2;
 
 public class HelloWorldAction implements RunAction2 {
 
-    private String name;
+    private String output;
     private transient Run run;
 
-    public HelloWorldAction(String name) {
-        this.name = name;
+    public HelloWorldAction(String output) {
+        this.output = output;
     }
 
-    public String getName() {
-        return name;
+    public String getOutput() {
+        return output;
     }
 
     @Override
@@ -24,12 +24,12 @@ public class HelloWorldAction implements RunAction2 {
 
     @Override
     public String getDisplayName() {
-        return "Greeting";
+        return "Refined Logger";
     }
 
     @Override
     public String getUrlName() {
-        return "greeting";
+        return "refined_logger";
     }
 
     @Override

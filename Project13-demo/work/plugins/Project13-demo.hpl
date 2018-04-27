@@ -2,14 +2,14 @@ Manifest-Version: 1.0
 Group-Id: io.jenkins.plugins
 Short-Name: Project13-demo
 Long-Name: TODO Plugin
-Plugin-Version: 1.0-SNAPSHOT (private-ff282bfd-elst228)
+Plugin-Version: 1.0-SNAPSHOT (private-ab6fea6b-tlco255)
 Hudson-Version: 2.107.2
 Jenkins-Version: 2.107.2
 Plugin-Dependencies: structs:1.7
 Plugin-Developers: 
-Libraries: /home/elst228/Desktop/cs498group11/Project13-demo/src/main/
- resources,/home/elst228/Desktop/cs498group11/Project13-demo/target/cl
- asses
-Resource-Path: /home/elst228/Desktop/cs498group11/Project13-demo/src/m
- ain/webapp
+Libraries: /home/tlco255/CS498/final2/cs498group11/Project13-demo/src/
+ main/resources,/home/tlco255/CS498/final2/cs498group11/Project13-demo
+ /target/classes
+Resource-Path: /home/tlco255/CS498/final2/cs498group11/Project13-demo/
+ src/main/webapp
 

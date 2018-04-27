@@ -5,7 +5,7 @@
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.0">
-      <projectUrl>https://github.com/Natini8/joda-time.git/</projectUrl>
+      <projectUrl>https://github.com/deedlehof/joda-time.git/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
   </properties>
@@ -13,7 +13,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/Natini8/joda-time.git</url>
+        <url>https://github.com/deedlehof/joda-time.git</url>
         <credentialsId>e67b07b6-0891-4ef8-b4bc-2fdd8b4723ad</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>

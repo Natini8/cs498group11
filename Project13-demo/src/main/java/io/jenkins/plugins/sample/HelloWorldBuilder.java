@@ -77,8 +77,6 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
             if(!skipNext) {
 
-                //Tests Passed perhaps [Tanner]
-
                 //Tests Failed perhaps [Laura]
 
                 //Tests Skipped perhaps [Harsh]
@@ -154,7 +152,6 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
         // First search in buffer
         String bufferStr = buffer.toString();
-        run.addAction(new HelloWorldAction(name));
 
 	String output;
 
@@ -169,6 +166,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         }
 
         listener.getLogger().println(output);
+        run.addAction(new HelloWorldAction(output));
 
         stopTime = System.currentTimeMillis();
         elapsedTimeInSeconds = (stopTime -startTime) / 1000.0;

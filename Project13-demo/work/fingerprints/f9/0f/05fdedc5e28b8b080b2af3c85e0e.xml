@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-27 14:10:45.230 UTC</timestamp>
+  <original>
+    <name>TestMaven/joda-time:joda-time</name>
+    <number>15</number>
+  </original>
+  <md5sum>f90f05fdedc5e28b8b080b2af3c85e0e</md5sum>
+  <fileName>joda-time:joda-time-2.9.9-no-tzdb-sources.jar</fileName>
+  <usages>
+    <entry>
+      <string>TestMaven</string>
+      <ranges>15</ranges>
+    </entry>
+    <entry>
+      <string>TestMaven/joda-time:joda-time</string>
+      <ranges>15</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
