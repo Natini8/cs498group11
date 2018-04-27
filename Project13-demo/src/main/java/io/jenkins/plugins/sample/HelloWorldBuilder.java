@@ -133,13 +133,21 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
     @Override
     public void perform(Run<?, ?> run, FilePath workspace, Launcher launcher, TaskListener listener) throws InterruptedException, IOException {
+
+        //Start the timer for the plugin and instantiate the stop time and time passed
         long startTime = System.currentTimeMillis();
         long stopTime;
-        String line;
         double elapsedTimeInSeconds;
+
+        //Initialize a string that will contain a line of the build log
+        String line;
+
+        //Grab and parse the log so that it can be read line by line
         Reader logReader = run.getLogReader();
         BufferedReader reader = new BufferedReader(logReader);
         StringBuilder buffer = new StringBuilder();
+
+        //Appending a newline to each line of the log
         try {
             while ((line = reader.readLine()) != null) {
                 buffer.append(line).append("\n");
@@ -153,24 +161,40 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         // First search in buffer
         String bufferStr = buffer.toString();
 
-	String output;
+        //Initalize a string to contain the output
+	    String output;
 
         //Notify the user of the begenning of the plugin
         listener.getLogger().println("=================================================\n");
+
+        //If the user selected shortened output
         if (useShortened) {
+
+            //Let the user know that they are about to recieve shortened output and then retrieve shortened output
             listener.getLogger().println("Short " + name + "!\n");
             output = parseFileShortened(bufferStr);
+
+        //Otherwise
         } else {
+
+            //let the user know that they are about to recieve output and the retrieve said output
             listener.getLogger().println("Hello, " + name + "!\n");
             output = parseFile(bufferStr);
+
         }
 
+        //Print the resulting output
         listener.getLogger().println(output);
         run.addAction(new HelloWorldAction(output));
 
+        //Stop the timer and divide by 1000 to convert the time to seconds
         stopTime = System.currentTimeMillis();
         elapsedTimeInSeconds = (stopTime -startTime) / 1000.0;
+
+        //Print the time the plugin took in seconds
         listener.getLogger().println("This plugin completed in " + elapsedTimeInSeconds + " seconds.\n");
+
+        //Notify the user of the end of the plugin
         listener.getLogger().println("=================================================");
 
     }
