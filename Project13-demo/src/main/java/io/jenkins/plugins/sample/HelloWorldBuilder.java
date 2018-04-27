@@ -159,12 +159,12 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 	String output;
 
         //Notify the user of the begenning of the plugin
-        listener.getLogger().println("=================================================");
+        listener.getLogger().println("=================================================\n");
         if (useShortened) {
-            listener.getLogger().println("Short " + name + "!");
+            listener.getLogger().println("Short " + name + "!\n");
             output = parseFileShortened(bufferStr);
         } else {
-            listener.getLogger().println("Hello, " + name + "!");
+            listener.getLogger().println("Hello, " + name + "!\n");
             output = parseFile(bufferStr);
         }
 
@@ -172,7 +172,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
         stopTime = System.currentTimeMillis();
         elapsedTimeInSeconds = (stopTime -startTime) / 1000.0;
-        listener.getLogger().println("This plugin completed in " + elapsedTimeInSeconds + " seconds");
+        listener.getLogger().println("This plugin completed in " + elapsedTimeInSeconds + " seconds.\n");
         listener.getLogger().println("=================================================");
 
     }
